@@ -1,0 +1,25 @@
+/*Botao.module.css*/
+.botao {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #391863, #391863), linear-gradient(0deg, #EFEDE6, #EFEDE6);
+    border: 2px solid #EFEDE6;
+    color: #EFEDE6; 
+    width: 245px;
+    height: 77px;
+    padding: 22px 46px;
+    gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    opacity: 0.5;
+}
