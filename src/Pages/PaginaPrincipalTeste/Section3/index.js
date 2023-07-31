@@ -26,7 +26,7 @@ function Section3() {
     {
       nome: 'Marcos Antônio',
       cargo: 'UX Designer',
-      foto: require('Assets/Pedro.png'),
+      foto: require('Assets/Marcos.png'),
     },
   ];
       

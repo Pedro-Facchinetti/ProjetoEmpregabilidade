@@ -9,18 +9,22 @@ export const LogoUni = ({ className }) => {
 
     return (
         <div className={`${styles['logo-uni']} ${className}`}>
-            <img
-                className={`${styles['logo']} ${isHovered ? styles['hidden'] : ''}`}
-                src={logoDefault}
-                alt="Logo da Uniceplac"
-            />
-            <img
-                className={`${styles['logo']} ${isHovered ? '' : styles['hidden']}`}
-                src={logoHover}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                alt="Logo da Uniceplac"
-            />
+            <div className={styles['logo-container']}>
+                <img
+                    className={`${styles['logo']} ${isHovered ? styles['hidden'] : ''}`}
+                    src={logoDefault}
+                    alt="Logo da Uniceplac"
+                />
+            </div>
+            <div className={styles['logo-container']}>
+                <img
+                    className={`${styles['logo']} ${isHovered ? '' : styles['hidden']}`}
+                    src={logoHover}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                    alt="Logo da Uniceplac"
+                />
+            </div>
         </div>
     );
 };

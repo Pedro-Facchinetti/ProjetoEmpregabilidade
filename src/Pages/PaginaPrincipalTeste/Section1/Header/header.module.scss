@@ -8,6 +8,9 @@ $font_type_1: 700 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   align-items: center;
   display: flex;
   position: relative;
+  @media (max-width: 600px) { // ajuste o valor conforme necessário
+    flex-direction: column;
+  }
 }
 .topo_Pagina__Conteudo__Cabecalho__cell {
   display: flex;

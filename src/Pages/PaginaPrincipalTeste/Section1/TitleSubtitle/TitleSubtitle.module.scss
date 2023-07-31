@@ -18,10 +18,14 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   display: flex;
   font: $font_type_0;
   letter-spacing: 0px;
+  font-size: clamp(1.5rem, 4vw, 4rem);
 }
 .titulos_Subtitulo_Cabecalho__Subtitulo {
   color: $color_type_0;
   font: $font_type_2;
   letter-spacing: 0px;
   margin: 0px 10px 0px 0px;
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 }

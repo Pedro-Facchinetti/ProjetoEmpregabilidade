@@ -2,11 +2,12 @@
 @use "/src/global.scss" as *;
 
 .cards {
-  align-items: center;
   display: flex;
-  position: relative;
-  gap: 70px;
+  flex-wrap: wrap; // permitir que os itens se movam para a próxima linha
+  justify-content: center; // centralizar os itens
+  gap: 70px; // ajuste o espaço entre os itens conforme necessário
 }
+
 .cards__spacer {
   flex: 0 1 70px;
 }
