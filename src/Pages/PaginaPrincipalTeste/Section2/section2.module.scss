@@ -1,0 +1,35 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+$color_type_0: rgb(255, 255, 255);
+
+$font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
+$font_type_1: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
+$font_type_2: 1em/1.37 "Open Sans", Helvetica, Arial, serif;
+$font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 978px;
+  position: relative;
+}
+.introducao__ConteudoPrincipal {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 155px 0px;
+  margin: 207px 5.79% 60px;
+  position: relative;
+  width: 88.43%;
+}
+.introducao__LinhasDivisorias {
+  height: 193px;
+  left: 2px;
+  object-fit: cover;
+  position: absolute;
+  right: -11px;
+  top: 10px;
+  width: calc(100% - 2px - -11px);
+}

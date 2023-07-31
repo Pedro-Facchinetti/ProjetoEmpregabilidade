@@ -1,0 +1,12 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+.cards {
+  align-items: center;
+  display: flex;
+  position: relative;
+  gap: 70px;
+}
+.cards__spacer {
+  flex: 0 1 70px;
+}

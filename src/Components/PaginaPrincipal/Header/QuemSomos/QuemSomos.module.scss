@@ -1,0 +1,12 @@
+.quem-somos {
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    transition: opacity 300ms ease-out;
+}
+
+.hidden {
+    opacity: 0;
+}

@@ -1,0 +1,32 @@
+@import "/src/global.scss";
+
+.button {
+  height: 78px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #391863;
+  border: 2px solid #efede6;
+  padding: 22px 46px;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #efede6;
+    color: #391863;
+  }
+}
+
+.label {
+  color: #efede6;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -2px;
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
+}

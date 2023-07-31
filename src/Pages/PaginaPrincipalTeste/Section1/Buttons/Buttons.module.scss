@@ -1,0 +1,26 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+$color_type_1: rgba(255, 255, 255, 0.698);
+$font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
+
+.topo_Pagina__Conteudo__Botoes {
+  display: flex;
+  flex-direction: column;
+  margin: 51px 60.95% 0px 0%;
+  position: relative;
+  width: 50%;
+}
+
+.titulos_Subtitulo_Cabecalho__Cadastrar__JaSou {
+  align-items: center;
+  align-self: flex-start; // Alinha o texto à esquerda
+  color: $color_type_1;
+  display: flex;
+  font: $font_type_2;
+  letter-spacing: -0.5px;
+  margin: 0px 27px 0px 28px;
+  text-decoration: underline;
+  text-align: left;
+  white-space: nowrap;
+}

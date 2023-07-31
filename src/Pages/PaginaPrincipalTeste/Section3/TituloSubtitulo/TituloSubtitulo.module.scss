@@ -1,0 +1,55 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+$color_type_0: rgb(255, 255, 255);
+$font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
+$font_type_1: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
+
+.tituloSubtitulo {
+  display: flex;
+  flex-direction: column;
+  gap: 48px 0px;
+  position: relative;
+}
+
+.titulo {
+  align-items: center;
+  color: $color_type_0;
+  display: flex;
+  font: $font_type_0;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 56px;
+  }
+  @include md {
+    font-size: 48px;
+  }
+  @include sm {
+    font-size: 40px;
+  }
+  @include xs {
+    font-size: 36px;
+  }
+  @include xxs {
+    font-size: 32px;
+  }
+  @include tn {
+    font-size: 20px;
+  }
+}
+
+.subtitulo {
+  color: $color_type_0;
+  font: $font_type_1;
+  letter-spacing: 0px;
+  text-align: justify;
+  @include lg {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 16px;
+  }
+  @include tn {
+    font-size: 12px;
+  }
+}
