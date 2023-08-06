@@ -9,19 +9,25 @@ $border_radius_type_0: 10px 10px 10px 10px;
 
 $font_type_0: 700 20px/1.14 "Raleway", Helvetica, Arial, serif;
 
+.cardWrapper {
+  padding: 0 10px; /* Adicione o preenchimento que desejar */
+}
+
 .card {
   box-sizing: border-box;
   background-color: $bg_color_type_0;
   border-radius: $border_radius_type_0;
   display: flex;
   flex-direction: column;
-  margin: 2px 0px 0px;
+  margin: 0px 0px 0px;
   outline: 4px solid rgb(0, 0, 0);
   outline-offset: -4px;
   position: relative;
-  height: 197px; // Ajuste a altura para 197px
-  width: 396px; // Ajuste a largura para 396px
+  height: 197px;
+  width: calc(100% - 20px); /* Subtraia o dobro do preenchimento do cardWrapper */
+  max-width: 400px; /* Ajuste para o tamanho máximo desejado */
 }
+
 .card__icon {
   height: 74px;
   left: 0px;
@@ -32,6 +38,7 @@ $font_type_0: 700 20px/1.14 "Raleway", Helvetica, Arial, serif;
   top: 21px;
   width: 74px;
 }
+
 .card__title {
   color: $color_type_0;
   display: flex;

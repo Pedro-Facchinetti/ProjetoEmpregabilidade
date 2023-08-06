@@ -3,11 +3,11 @@
 
 .cards {
   display: flex;
-  flex-wrap: wrap; // permitir que os itens se movam para a próxima linha
-  justify-content: center; // centralizar os itens
-  gap: 70px; // ajuste o espaço entre os itens conforme necessário
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
 }
 
-.cards__spacer {
-  flex: 0 1 70px;
+.cardsMobile {
+  gap: 70px;
 }

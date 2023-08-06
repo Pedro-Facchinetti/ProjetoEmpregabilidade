@@ -50,4 +50,5 @@ $font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); // ajuste o tamanho mínimo do card conforme necessário
   gap: 20px; // ajuste o espaço entre os itens conforme necessário
+  justify-content: center; // adiciona essa linha
 }

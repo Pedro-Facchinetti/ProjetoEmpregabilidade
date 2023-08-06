@@ -1,3 +1,4 @@
+// src/components/section3.module.scss
 @use "/src/utils.scss" as *;
 @use "/src/global.scss" as *;
 
@@ -18,6 +19,7 @@
   right: 0px;
   top: 0px;
   width: 882px;
+  align-self: center;
 }
 
 .apresentacao__Conteudo {

@@ -1,12 +1,10 @@
+// src/components/Section3.js
 import React from 'react';
-
 import TituloSubtitulo from './TituloSubtitulo/index';
 import Equipe from './Equipe/index';
-
 import styles from './section3.module.scss';
 
 function Section3() {
-
   const equipe = [
     {
       nome: 'André Félix',
@@ -29,18 +27,19 @@ function Section3() {
       foto: require('Assets/Marcos.png'),
     },
   ];
-      
-  return (
-    <section className={styles.apresentacao}>
-      <img
-        className={styles.apresentacao__Logo}
-        src={require('Assets/LogoBackground.png')}
-        alt="alt text"
-      />
 
+  return (
+    <section
+      className={styles.apresentacao}
+      style={{
+        backgroundImage: `url(${require('Assets/LogoBackground.png')})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className={styles.apresentacao__Conteudo}>
-        <TituloSubtitulo 
-          title="Quem somos?" 
+        <TituloSubtitulo
+          title="Quem somos?"
           subtitle={`Somos alunos da própria UNICEPLAC, onde tivemos a iniciativa de melhorar a apresentação e implementação do
             projeto empregabilidade, que já existia, porém com pouca visibilidade. Formamos uma equipe com alguns alunos
             do curso de Engenharia de Software e o professor responsável pelo projeto, para que a implementação desta

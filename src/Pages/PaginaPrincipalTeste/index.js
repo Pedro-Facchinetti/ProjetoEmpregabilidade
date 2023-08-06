@@ -13,7 +13,6 @@ function PaginaPrincipal(props) {
       <div className={styles.main__cell}>{renderSection1(props)}</div>
       <div className={styles.main__cell}>{renderSection2(props)}</div>
       <div className={styles.main__cell}>{renderSection3(props)}</div>
-      <img className={styles.icon} src={require('Assets/Seta.png')} alt="Seta guia" />
     </main>
   );
 }
