@@ -9,19 +9,28 @@ $border_radius_type_0: 10px 10px 10px 10px;
 
 $font_type_0: 700 20px/1.14 "Raleway", Helvetica, Arial, serif;
 
+.cardWrapper {
+  flex: 1 0 calc(33.33% - 20px); // Isso dará a cada card um terço do espaço disponível
+  max-width: calc(33.33% - 20px); // Isso limitará a largura máxima
+  padding: 0 10px;
+  transform: scale(0.3);
+}
+
 .card {
   box-sizing: border-box;
   background-color: $bg_color_type_0;
   border-radius: $border_radius_type_0;
   display: flex;
   flex-direction: column;
-  margin: 2px 0px 0px;
+  margin: 0px 0px 0px;
   outline: 4px solid rgb(0, 0, 0);
   outline-offset: -4px;
   position: relative;
-  height: 197px; // Ajuste a altura para 197px
-  width: 396px; // Ajuste a largura para 396px
+  height: 197px;
+  width: calc(100% - 20px);
+  max-width: 400px; 
 }
+
 .card__icon {
   height: 74px;
   left: 0px;
@@ -32,6 +41,7 @@ $font_type_0: 700 20px/1.14 "Raleway", Helvetica, Arial, serif;
   top: 21px;
   width: 74px;
 }
+
 .card__title {
   color: $color_type_0;
   display: flex;

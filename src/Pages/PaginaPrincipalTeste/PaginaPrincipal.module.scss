@@ -13,15 +13,18 @@ $padding_type_0: undefinedpx undefinedpx undefinedpx undefinedpx;
   padding: $padding_type_0;
   position: relative;
 }
+
 .main__cell {
   display: flex;
   flex-direction: column;
 }
+
 .icon {
-  bottom: 154px;
+  bottom: 20px;
   height: 40px;
   object-fit: cover;
-  position: absolute;
-  right: 3.59%;
+  position: fixed;
+  right: 20px;
   width: 40px;
+  cursor: pointer;
 }

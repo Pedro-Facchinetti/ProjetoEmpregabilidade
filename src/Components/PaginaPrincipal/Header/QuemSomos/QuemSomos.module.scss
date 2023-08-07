@@ -1,12 +1,16 @@
 .quem-somos {
-    position: relative;
-}
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 700;
+  transition: color 300ms ease-out;
+  cursor: pointer;
+  white-space: nowrap;
 
-.texto {
-    position: absolute;
-    transition: opacity 300ms ease-out;
-}
+  &:hover {
+    color: #4B247B; // A cor que desejar ao passar o mouse
+  }
 
-.hidden {
-    opacity: 0;
+  @media (max-width: 600px) {
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }

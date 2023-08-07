@@ -2,12 +2,19 @@
 @use "/src/global.scss" as *;
 
 .cards {
-  display: flex;
-  flex-wrap: wrap; // permitir que os itens se movam para a próxima linha
-  justify-content: center; // centralizar os itens
-  gap: 70px; // ajuste o espaço entre os itens conforme necessário
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // Três colunas
+  gap: 70px;
 }
 
-.cards__spacer {
-  flex: 0 1 70px;
+@media only screen and (max-width: 1300px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr); // Duas colunas
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr); // Uma coluna
+  }
 }
