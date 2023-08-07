@@ -1,12 +1,13 @@
 .sobre {
-    position: relative;
-}
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 700;
+  transition: color 300ms ease-out;
+  cursor: pointer;
 
-.texto {
-    position: absolute;
-    transition: opacity 300ms ease-out;
-}
-
-.hidden {
-    opacity: 0;
+  &:hover {
+    color: #4B247B;
+  }
+  @media (max-width: 720px) {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }

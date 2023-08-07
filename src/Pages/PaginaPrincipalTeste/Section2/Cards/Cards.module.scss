@@ -2,12 +2,19 @@
 @use "/src/global.scss" as *;
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // Três colunas
   gap: 70px;
 }
 
-.cardsMobile {
-  gap: 70px;
+@media only screen and (max-width: 1300px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr); // Duas colunas
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr); // Uma coluna
+  }
 }

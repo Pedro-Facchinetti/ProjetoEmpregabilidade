@@ -1,25 +1,9 @@
-// src/components/section3.module.scss
-@use "/src/utils.scss" as *;
-@use "/src/global.scss" as *;
-
 .apresentacao {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  min-height: 1108px;
   position: relative;
-}
-
-.apresentacao__Logo {
-  bottom: 84px;
-  left: 0px;
-  margin: 0px auto;
-  object-fit: cover;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 882px;
-  align-self: center;
+  min-height: 1108px;
 }
 
 .apresentacao__Conteudo {
@@ -27,7 +11,7 @@
   flex-direction: column;
   flex-grow: 1;
   gap: 111px 0px;
-  margin: 47px 5.79% 210px;
+  margin: 47px 5.79%;
   position: relative;
   width: 88.43%;
 }

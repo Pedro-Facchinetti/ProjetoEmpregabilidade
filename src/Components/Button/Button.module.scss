@@ -29,4 +29,8 @@
   position: relative;
   width: fit-content;
   white-space: nowrap;
+
+  @media (max-width: 720px) {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Adicione sombra ao texto
+  }
 }

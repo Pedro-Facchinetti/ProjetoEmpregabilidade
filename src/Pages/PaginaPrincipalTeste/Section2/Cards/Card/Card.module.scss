@@ -10,7 +10,10 @@ $border_radius_type_0: 10px 10px 10px 10px;
 $font_type_0: 700 20px/1.14 "Raleway", Helvetica, Arial, serif;
 
 .cardWrapper {
-  padding: 0 10px; /* Adicione o preenchimento que desejar */
+  flex: 1 0 calc(33.33% - 20px); // Isso dará a cada card um terço do espaço disponível
+  max-width: calc(33.33% - 20px); // Isso limitará a largura máxima
+  padding: 0 10px;
+  transform: scale(0.3);
 }
 
 .card {
@@ -24,8 +27,8 @@ $font_type_0: 700 20px/1.14 "Raleway", Helvetica, Arial, serif;
   outline-offset: -4px;
   position: relative;
   height: 197px;
-  width: calc(100% - 20px); /* Subtraia o dobro do preenchimento do cardWrapper */
-  max-width: 400px; /* Ajuste para o tamanho máximo desejado */
+  width: calc(100% - 20px);
+  max-width: 400px; 
 }
 
 .card__icon {

@@ -15,6 +15,7 @@ $font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
   min-height: 978px;
   position: relative;
 }
+
 .introducao__ConteudoPrincipal {
   display: flex;
   flex-direction: column;
@@ -24,6 +25,7 @@ $font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
   position: relative;
   width: 88.43%;
 }
+
 .introducao__LinhasDivisorias {
   height: 193px;
   left: 2px;
@@ -32,4 +34,8 @@ $font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
   right: -11px;
   top: 10px;
   width: calc(100% - 2px - -11px);
+
+  @media (max-width: 720px) {
+    top: 0px;
+  }
 }

@@ -8,11 +8,24 @@ import renderSection3 from './Section3/index';
 import styles from './PaginaPrincipal.module.scss';
 
 function PaginaPrincipal(props) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <main className={cn(styles.main, 'pagina-principal')}>
-      <div className={styles.main__cell}>{renderSection1(props)}</div>
-      <div className={styles.main__cell}>{renderSection2(props)}</div>
-      <div className={styles.main__cell}>{renderSection3(props)}</div>
+      <div id="section1" className={styles.main__cell}>{renderSection1(props)}</div>
+      <div id="section2" className={styles.main__cell}>{renderSection2(props)}</div>
+      <div id="section3" className={styles.main__cell}>{renderSection3(props)}</div>
+      <img
+        className={styles.icon}
+        src={require('Assets/Seta.png')}
+        alt="Seta guia"
+        onClick={scrollToTop}
+      />
     </main>
   );
 }

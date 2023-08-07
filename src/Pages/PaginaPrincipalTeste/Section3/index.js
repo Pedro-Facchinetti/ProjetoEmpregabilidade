@@ -1,4 +1,3 @@
-// src/components/Section3.js
 import React from 'react';
 import TituloSubtitulo from './TituloSubtitulo/index';
 import Equipe from './Equipe/index';
@@ -33,9 +32,10 @@ function Section3() {
       className={styles.apresentacao}
       style={{
         backgroundImage: `url(${require('Assets/LogoBackground.png')})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+        backgroundSize: 'contain', 
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+      }}      
     >
       <div className={styles.apresentacao__Conteudo}>
         <TituloSubtitulo

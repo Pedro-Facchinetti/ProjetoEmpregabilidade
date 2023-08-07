@@ -7,16 +7,14 @@ $color_type_0: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  min-height: 966px;
+  min-height: 966px; // Altura mínima para telas grandes
   position: relative;
+
+  @media (max-width: 720px) {
+    min-height: auto; // Remove a restrição de altura mínima em telas pequenas
+  }
 }
-.topo_Pagina1 {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  min-height: 966px;
-  position: relative;
-}
+
 .topo_Pagina__Estudante {
   bottom: 0px;
   object-fit: cover;
@@ -24,7 +22,14 @@ $color_type_0: rgb(255, 255, 255);
   right: 0%;
   top: 0px;
   width: 909px;
+
+  @media (max-width: 720px) {
+    width: 190%; // Ajusta a largura para ocupar toda a section1
+    height: 115%; // Ajusta a altura para ocupar toda a section1
+  }
 }
+
+
 .topo_Pagina__Conteudo {
   display: flex;
   flex-direction: column;
@@ -32,4 +37,11 @@ $color_type_0: rgb(255, 255, 255);
   margin: 60px 57.75% 256px 5.79%;
   position: relative;
   width: 36.46%;
+
+  @media (max-width: 720px) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
 }
