@@ -2,19 +2,37 @@
 @use "/src/global.scss" as *;
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); // Três colunas
-  gap: 70px;
-}
+  display: flex;
+  flex-wrap: wrap; // Permite que os itens passem para a próxima linha
+  justify-content: center; // Centraliza os itens na linha
 
-@media only screen and (max-width: 1300px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr); // Duas colunas
+  // Definir um tamanho específico para cada card, garantindo que haja espaço para três na linha
+  .cardWrapper {
+    flex: 0 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    padding: 0 10px;
+  }
+
+  // Adaptações para telas menores
+  @media only screen and (max-width: 1300px) {
+    .cardWrapper {
+      flex: 0 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .cardWrapper {
+      flex: 0 1 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
   }
 }
 
-@media only screen and (max-width: 720px) {
-  .cards {
-    grid-template-columns: repeat(1, 1fr); // Uma coluna
-  }
+.linhasDivisorias {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: block;
+  height: auto; // Adicionando altura automática
 }

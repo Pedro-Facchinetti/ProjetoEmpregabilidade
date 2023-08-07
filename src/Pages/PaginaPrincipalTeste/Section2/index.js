@@ -15,7 +15,7 @@ function renderSection2(props) {
       <img
         className={styles.introducao__LinhasDivisorias}
         src={require('Assets/Linhas-divisorias.svg').default}
-        alt="alt text"
+        alt="Linhas divisórias cards de vantagens"
       />
     </section>
   );
