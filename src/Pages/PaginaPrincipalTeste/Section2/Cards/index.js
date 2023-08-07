@@ -5,9 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from './Card/index';
 import styles from './Cards.module.scss';
+import linhasImg from 'Assets/Linhas.png';
 
 function Cards() {
-  const isMobile = useMediaQuery({ query: '(max-width: 720px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 750px)' });
 
   const settings = {
     dots: false,
@@ -59,17 +60,20 @@ function Cards() {
   ));
 
   return (
-    <div className={isMobile ? styles.cardsMobile : styles.cards}>
-      {isMobile ? (
-        <Slider {...settings}>
-          {cards}
-        </Slider>
-      ) : (
-        <>
-          {cards}
-          <div className={styles.spacer} />
-        </>
-      )}
+    <div className={styles.cardsContainer}>
+      <div className={isMobile ? styles.cardsMobile : styles.cards}>
+        {isMobile ? (
+          <Slider {...settings}>
+            {cards}
+          </Slider>
+        ) : (
+          <>
+            {cards}
+            <div className={styles.spacer} />
+          </>
+        )}
+      </div>
+      <img className={styles.linhasDivisorias} src={linhasImg} alt="Linhas divisórias" />
     </div>
   );
 }

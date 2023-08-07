@@ -23,7 +23,7 @@ function Header() {
       <div className={styles.topo_Pagina__Conteudo__Cabecalho__spacer} />
       <Sobre className={styles.cabecalho_Sobre} onClick={() => scrollToSection('section2', 80)} />
       <div className={styles.topo_Pagina__Conteudo__Cabecalho__spacer} />
-      <QuemSomos className={styles.cabecalho_QuemSomos} onClick={() => scrollToSection('section3', 200)}/>
+      <QuemSomos className={styles.cabecalho_QuemSomos} onClick={() => scrollToSection('section3', 0)}/>
     </div>
   );
 }
