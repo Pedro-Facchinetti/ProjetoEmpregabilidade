@@ -9,11 +9,11 @@ import styles from './PaginaPrincipal.module.scss';
 
 function PaginaPrincipal(props) {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+    const element = document.getElementById("section1"); // ou qualquer outro elemento no topo da página
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };  
 
   return (
     <main className={cn(styles.main, 'pagina-principal')}>
