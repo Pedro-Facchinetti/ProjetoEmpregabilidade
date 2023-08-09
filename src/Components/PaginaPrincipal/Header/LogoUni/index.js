@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 import styles from './LogoUni.module.scss';
 import logoDefault from './UniLogo-Default.png';

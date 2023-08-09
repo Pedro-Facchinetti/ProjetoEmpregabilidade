@@ -49,7 +49,7 @@ function Cards() {
   const cardsInfo = [
     {
       icon: require('Assets/linkedin.png'),
-      title: "Oportunidade de implementar seu currículo porfissional"
+      title: "Oportunidade de implementar seu currículo profissional"
     },
     {
       icon: require('Assets/medalha.png'),

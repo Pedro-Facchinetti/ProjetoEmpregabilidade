@@ -26,10 +26,10 @@ $font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
   text-align: center;
   width: 55.63%;
   @media (max-width: 600px) {
-    font-size: 48px; // reduzir o tamanho da fonte para telas menores
+    font-size: 48px;
   }
   @media (max-width: 400px) {
-    font-size: 32px; // reduzir ainda mais o tamanho da fonte para telas muito pequenas
+    font-size: 32px;
   }
 }
 
@@ -37,7 +37,7 @@ $font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
   color: $color_type_0;
   font: $font_type_1;
   letter-spacing: 0px;
-  text-align: justify;
+  text-align: center;
 }
 
 .subtitulo_bold {

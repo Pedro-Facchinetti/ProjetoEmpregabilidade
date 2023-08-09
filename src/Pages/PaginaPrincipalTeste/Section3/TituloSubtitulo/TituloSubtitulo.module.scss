@@ -32,7 +32,7 @@ $font_type_1: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   color: $color_type_0;
   font: $font_type_1;
   letter-spacing: 0px;
-  text-align: justify;
+  text-align: left;
   @include lg {
     font-size: 20px;
   }
