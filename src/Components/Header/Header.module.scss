@@ -1,0 +1,74 @@
+.header {
+  background-color: rgb(47, 47, 47);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.header__conteudo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.uniLogo {
+  flex: 0 0 auto;
+  height: 73px;
+  width: 64px;
+  object-fit: cover;
+  align-self: flex-start;
+}
+
+.header__conteudo__spacer {
+  flex-grow: 1;
+}
+
+.header__conteudo__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__conteudo__container__nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header__conteudo__container__nav__procurar,
+.header__conteudo__container__nav__minhas {
+  color: rgb(255, 255, 255);
+  font: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
+  margin-right: 20px;
+}
+
+.header__conteudo__container__usuario {
+  display: flex;
+  align-items: center;
+}
+
+.header__conteudo__container__usuario__notificacao,
+.header__conteudo__container__usuario__perfil {
+  height: 28px;
+  width: 26px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.header__conteudo__container__usuario__perfil {
+  height: 75px;
+  width: 75px;
+}
+
+@media (max-width: 720px) {
+  .header__conteudo__container__nav__procurar,
+  .header__conteudo__container__nav__minhas {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .header__conteudo__container__usuario__notificacao,
+  .header__conteudo__container__usuario__perfil {
+    margin-right: 10px;
+  }
+}
