@@ -1,12 +1,31 @@
 .logo-uni {
-    position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; // largura padrão para telas grandes
+  height: 74px;
+  cursor: pointer;
+
+  @media (max-width: 720px) {
+    max-width: 64px; // Largura máxima para telas pequenas
+  }
+
 }
 
 .logo {
-    position: absolute;
-    transition: opacity 300ms ease-out;
+  position: absolute;
+  width: 100%; // garante que a logo ocupe toda a largura da div
+  height: auto; // mantém a proporção da imagem
+  transition: opacity 300ms ease-out;
+  max-height: 100%;
+
+  @media (max-width: 720px) {
+    max-width: 64px; // Largura máxima para telas pequenas
+  }
+
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }

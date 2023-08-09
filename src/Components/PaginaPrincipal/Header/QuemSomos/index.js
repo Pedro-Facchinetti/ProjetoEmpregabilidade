@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import styles from './QuemSomos.module.scss';
 
-export const QuemSomos = ({ className, onClick }) => { // Adicione onClick aqui
+export const QuemSomos = ({ className, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (

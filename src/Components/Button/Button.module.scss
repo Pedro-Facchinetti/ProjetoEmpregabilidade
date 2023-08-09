@@ -1,6 +1,7 @@
 @import "/src/global.scss";
 
 .button {
+  cursor: pointer;
   height: 78px;
   width: auto;
   display: flex;
@@ -31,6 +32,6 @@
   white-space: nowrap;
 
   @media (max-width: 720px) {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Adicione sombra ao texto
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }

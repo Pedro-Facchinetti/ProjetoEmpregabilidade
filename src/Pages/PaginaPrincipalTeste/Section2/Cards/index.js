@@ -10,6 +10,14 @@ import linhasImg from 'Assets/Linhas.png';
 function Cards() {
   const isMobile = useMediaQuery({ query: '(max-width: 750px)' });
 
+  const cardWrapperStyle = isMobile ? {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  } : {};
+
   const settings = {
     dots: false,
     infinite: true,
@@ -55,7 +63,9 @@ function Cards() {
 
   const cards = cardsInfo.map((card, index) => (
     <div key={index} className={styles.cardWrapper}>
-      <Card icon={card.icon} title={card.title} />
+      <div style={cardWrapperStyle}>
+        <Card icon={card.icon} title={card.title} />
+      </div>
     </div>
   ));
 

@@ -17,11 +17,11 @@ const scrollToSection = (sectionId, offset = 0) => {
 function Header() {
   return (
     <div className={styles.topo_Pagina__Conteudo__Cabecalho}>
-      <div className={styles.topo_Pagina__Conteudo__Cabecalho__cell}>
-        <LogoUni className={styles.uniceplac_Logo} />
+      <div className={`${styles.topo_Pagina__Conteudo__Cabecalho__cell} ${styles.uniceplac_Logo}`}>
+        <LogoUni />
       </div>
       <div className={styles.topo_Pagina__Conteudo__Cabecalho__spacer} />
-      <Sobre className={styles.cabecalho_Sobre} onClick={() => scrollToSection('section2', 80)} />
+      <Sobre className={styles.cabecalho_Sobre} onClick={() => scrollToSection('section2', 150)} />
       <div className={styles.topo_Pagina__Conteudo__Cabecalho__spacer} />
       <QuemSomos className={styles.cabecalho_QuemSomos} onClick={() => scrollToSection('section3', 0)}/>
     </div>

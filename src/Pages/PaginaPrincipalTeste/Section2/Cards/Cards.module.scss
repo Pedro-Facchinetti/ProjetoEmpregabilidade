@@ -3,17 +3,23 @@
 
 .cards {
   display: flex;
-  flex-wrap: wrap; // Permite que os itens passem para a próxima linha
-  justify-content: center; // Centraliza os itens na linha
+  flex-wrap: wrap;
+  justify-content: center; 
 
-  // Definir um tamanho específico para cada card, garantindo que haja espaço para três na linha
   .cardWrapper {
     flex: 0 1 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
     padding: 0 10px;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  // Adaptações para telas menores
   @media only screen and (max-width: 1300px) {
     .cardWrapper {
       flex: 0 1 calc(50% - 20px);
@@ -22,9 +28,12 @@
   }
 
   @media only screen and (max-width: 720px) {
-    .cardWrapper {
-      flex: 0 1 calc(100% - 20px);
-      max-width: calc(100% - 20px);
+    .cards .slick-slide > div > .cardWrapper {
+      width: 100%;
+      display: flex !important; // Usar !important para forçar a aplicação deste estilo, pois ele vem do slicker!!
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -34,5 +43,5 @@
   max-width: 1000px;
   margin: 20px auto;
   display: block;
-  height: auto; // Adicionando altura automática
+  height: auto;
 }

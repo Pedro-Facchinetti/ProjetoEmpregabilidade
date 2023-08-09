@@ -6,11 +6,6 @@ import styles from './section3.module.scss';
 function Section3() {
   const equipe = [
     {
-      nome: 'André Félix',
-      cargo: 'Professor',
-      foto: require('Assets/André.png'),
-    },
-    {
       nome: 'Pedro Facchinetti',
       cargo: 'Dev. Full-Stack',
       foto: require('Assets/Pedro.png'),
@@ -24,6 +19,11 @@ function Section3() {
       nome: 'Marcos Antônio',
       cargo: 'UX Designer',
       foto: require('Assets/Marcos.png'),
+    },
+    {
+      nome: 'André Félix',
+      cargo: 'Professor',
+      foto: require('Assets/André.png'),
     },
   ];
 

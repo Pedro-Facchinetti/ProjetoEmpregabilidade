@@ -8,7 +8,7 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
 .topo_Pagina__Conteudo__Botoes {
   display: flex;
   flex-direction: column;
-  align-items: center; // Adicione esta linha para alinhar o conteúdo ao centro
+  align-items: center;
   margin: 51px 60.95% 0px 0%;
   position: relative;
   width: 50%;
@@ -28,9 +28,18 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   text-align: center;
   white-space: nowrap;
   margin: 0;
+  font-style: italic;
+  cursor: pointer;
 
-  @media (max-width: 720px) {
+  &:hover {
+    color: rgba(255, 255, 255, 0.698);
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font: $font_type_2
+    font: $font_type_2;
+    font-style: italic;
+    cursor: pointer;
   }
 }

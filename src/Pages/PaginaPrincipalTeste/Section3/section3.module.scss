@@ -9,9 +9,8 @@
 .apresentacao__Conteudo {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  gap: 111px 0px;
-  margin: 47px 5.79%;
-  position: relative;
+  align-items: center;
+  justify-content: center;
   width: 88.43%;
+  margin: 47px auto;
 }

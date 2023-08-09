@@ -8,7 +8,9 @@ $font_type_1: 700 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   align-items: center;
   display: flex;
   position: relative;
-
+  @media (max-width: 300px) {
+    justify-content: center;
+  }
 }
 
 .topo_Pagina__Conteudo__Cabecalho__cell {
@@ -16,30 +18,41 @@ $font_type_1: 700 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   flex-direction: column;
   min-width: 235px;
   margin-right: 20px;
-  
-  @media (max-width: 720px) { 
-    min-width: 120px;
-    margin-left: 40px;
-    margin-right: 0px;
+
+  @media (max-width: 720px) {
+    max-width: 64px;
+    min-width: auto; // Corrigir para 'auto' aqui
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 300px) {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
 .uniceplac_Logo {
   flex-grow: 1;
   min-height: 74px;
-  object-fit: cover;
   width: 100%;
   margin-right: 20px;
-  @media (max-width: 720px) {
-    maring-rift: 0px
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 600px) {
+
+
   }
+
 }
 
 .topo_Pagina__Conteudo__Cabecalho__spacer {
   flex: 1;
 }
 
-.cabecalho_Sobre {
+.cabecalho_Sobre,
+.cabecalho_QuemSomos {
   align-items: center;
   color: $color_type_0;
   display: flex;
@@ -47,14 +60,10 @@ $font_type_1: 700 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   font: $font_type_1;
   letter-spacing: 0px;
   margin: 21px 20px 20px 0px;
-}
 
-.cabecalho_QuemSomos {
-  align-items: center;
-  color: $color_type_0;
-  display: flex;
-  flex: 0 0 168px;
-  font: $font_type_1;
-  letter-spacing: 0px;
-  margin: 21px 20px 20px 0px;
+  @media (max-width: 300px) {
+    flex: 0 0 auto;
+    font-size: 14px;
+    margin: 10px 5px 10px 0px;
+  }
 }
