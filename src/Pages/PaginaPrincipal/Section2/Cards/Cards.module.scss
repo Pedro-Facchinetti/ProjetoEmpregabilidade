@@ -40,8 +40,11 @@
 
 .linhasDivisorias {
   width: 100%;
-  max-width: 1000px;
+  height: auto;
   margin: 20px auto;
   display: block;
-  height: auto;
+  margin-top: 5vh;
+  @media (min-width: 5000px) {
+    margin-top: 99px;
+  }
 }

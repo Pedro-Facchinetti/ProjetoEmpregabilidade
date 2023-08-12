@@ -1,13 +1,12 @@
 import React from 'react';
 import cn from 'classnames';
 import styles from './Homealuno.module.scss';
-import Header from 'Components/Header/index';
 import CardVaga from 'Components/Vaga/Card/index';
 
 function Homealuno() {
   return (
     <div className={cn(styles.root, 'homealuno')}>
-      <Header />
+      
       <div className={styles.home}>
         <div className={styles.home__apresentacao}>
           <h1 className={styles.home__apresentacao__titulo}>Vagas cadastradas</h1>

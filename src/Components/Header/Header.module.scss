@@ -1,15 +1,34 @@
 .header {
   background-color: rgb(47, 47, 47);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 30px;
+
+  @media (max-width: 720px) {
+
+  padding: 10px;
+}
+
 }
 
 .header__conteudo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 20px
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 75px;
+  position: relative;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
 }
 
 .uniLogo {
@@ -17,22 +36,29 @@
   height: 73px;
   width: 64px;
   object-fit: cover;
-  align-self: flex-start;
-}
-
-.header__conteudo__spacer {
   flex-grow: 1;
+  margin-right: 10px;
+  min-width: 30px;
+
+  @media (min-width: 400px) and (max-width: 500px){
+
+    margin-left: 20px;
+
+  }
+
 }
 
 .header__conteudo__container {
   display: flex;
   align-items: center;
+  flex-grow: 1;
+  flex-wrap: nowrap;
 }
 
 .header__conteudo__container__nav {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  max-width: 100%;
 }
 
 .header__conteudo__container__nav__procurar,
@@ -40,35 +66,55 @@
   color: rgb(255, 255, 255);
   font: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   margin-right: 20px;
+  min-width: 10px;
+  flex-shrink: 1;
+
+  @media (max-width: 300px) {
+
+    margin-right: 0px;
+
+  }
+
 }
 
 .header__conteudo__container__usuario {
   display: flex;
   align-items: center;
+  gap: 10px; // Valor padrão do gap
 }
 
 .header__conteudo__container__usuario__notificacao,
 .header__conteudo__container__usuario__perfil {
-  height: 28px;
-  width: 26px;
+  height: clamp(20px, 4vw, 28px);
+  width: clamp(18px, 3.5vw, 26px);
   object-fit: cover;
-  margin-right: 20px;
 }
 
+.foto-perfil-container {
+  width: clamp(40px, 10vw, 75px); // Tamanho adaptável
+  height: clamp(40px, 10vw, 75px);
+}
+
+
 .header__conteudo__container__usuario__perfil {
-  height: 75px;
-  width: 75px;
+  height: clamp(40px, 10vw, 75px);
+  width: clamp(40px, 10vw, 75px);
+}
+
+@media (max-width: 720px) {
+
+  .leftContainer {
+    width: 10%;
+  }
+
+  .header__conteudo__container__usuario {
+    gap: 10px; // Valor ajustado do gap para telas menores
+  }
 }
 
 @media (max-width: 720px) {
   .header__conteudo__container__nav__procurar,
   .header__conteudo__container__nav__minhas {
-    font-size: 18px;
-    margin-right: 10px;
-  }
-
-  .header__conteudo__container__usuario__notificacao,
-  .header__conteudo__container__usuario__perfil {
-    margin-right: 10px;
+    min-width: 5px;
   }
 }

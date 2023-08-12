@@ -5,43 +5,50 @@ $color_type_0: rgb(255, 255, 255);
 
 .topo_Pagina {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  min-height: 966px; // Altura mínima para telas grandes
+  flex-direction: row;
+  height: 100vh; // Ocupa toda a altura da janela
   position: relative;
 
+  max-height: 1600px;
+
   @media (max-width: 720px) {
-    min-height: auto; // Remove a restrição de altura mínima em telas pequenas
+    flex-direction: column; // Muda para coluna em telas pequenas
+    height: auto;
   }
 }
 
 .topo_Pagina__Estudante {
-  bottom: 0px;
-  object-fit: cover;
-  position: absolute;
-  right: 0%;
-  top: 0px;
-  width: 909px;
+  width: 50%; // Ocupa 50% da largura
+  object-fit: fill;
+  max-height: 100%;
 
   @media (max-width: 720px) {
-    width: 190%; // Ajusta a largura para ocupar toda a section1
-    height: 115%; // Ajusta a altura para ocupar toda a section1
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
   }
 }
-
 
 .topo_Pagina__Conteudo {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  margin: 60px 57.75% 256px 5.79%;
-  position: relative;
-  width: 36.46%;
+  width: 50%;
+  height: 100%;
+  margin-left: 5.79vw;
 
   @media (max-width: 720px) {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
+    height: auto;
+    z-index: 1;
+  }
+
+  @media (min-width: 1500px) {
+    margin-left: 7%;
+    max-height: 100%;
   }
 }

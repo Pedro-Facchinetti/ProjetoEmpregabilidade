@@ -11,6 +11,13 @@ $font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
   margin: 0px 12.76% 0px 12.7%;
   position: relative;
   width: 74.54%;
+  
+  @media (max-width: 720px) {
+    margin: auto; // Margens reduzidas
+    width: 100%;
+    align-content: center;
+    gap: 20px
+  }
 }
 
 .titulo {
@@ -20,34 +27,26 @@ $font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
   text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4980392156862745);
   text-align: center; // Centraliza o texto
   margin-top: 50px; // Adiciona a margem superior
-  @include xxl {
-    justify-content: center;
-    text-align: center;
+  font-size: clamp(1.5rem, 4vw, 12.5rem);
+  
+
+  @media (max-width: 720px) {
+    font-size: 26px;
   }
-  @include lg {
-    font-size: 56px;
+
+  @media (max-width: 600px) {
+    font-size: 44px;
   }
-  @include md {
-    font-size: 48px;
-  }
-  @include sm {
-    font-size: 40px;
-  }
-  @include xs {
-    font-size: 36px;
-  }
-  @include xxs {
+  @media (max-width: 400px) {
     font-size: 32px;
-  }
-  @include tn {
-    font-size: 20px;
   }
 }
 
 .membros {
+  width: 100%;
   display: flex;
-  justify-content: center; // Centraliza horizontalmente
-  align-items: center; // Centraliza verticalmente
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px; // ajuste o espaço entre os itens conforme necessário
+  gap:  5vw;
 }

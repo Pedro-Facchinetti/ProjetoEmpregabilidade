@@ -11,13 +11,21 @@ $font_type_1: 700 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   @media (max-width: 300px) {
     justify-content: center;
   }
+
+  @media (max-width: 720px) {
+    margin: 10px;
+  }
+
 }
 
 .topo_Pagina__Conteudo__Cabecalho__cell {
   display: flex;
   flex-direction: column;
   min-width: 235px;
-  margin-right: 20px;
+
+  @media (min-width: 1500px) {
+    max-width: 235px;
+  }
 
   @media (max-width: 720px) {
     max-width: 64px;
@@ -34,18 +42,18 @@ $font_type_1: 700 24px/1.37 "Open Sans", Helvetica, Arial, serif;
 
 .uniceplac_Logo {
   flex-grow: 1;
-  min-height: 74px;
-  width: 100%;
-  margin-right: 20px;
+  max-width: 13.62vw; // Mesma largura que a logo
+  height: 100%; // Mesma altura que a logo
   display: flex;
-  align-items: center;
+  align-items: left;
+  margin-top: 2rem;
 
-  @media (max-width: 600px) {
-
-
+  @media (max-width: 720px) {
+    margin-top: 0;
   }
 
 }
+
 
 .topo_Pagina__Conteudo__Cabecalho__spacer {
   flex: 1;

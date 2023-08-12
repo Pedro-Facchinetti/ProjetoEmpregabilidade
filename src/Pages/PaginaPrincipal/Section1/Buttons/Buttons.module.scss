@@ -11,10 +11,17 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   align-items: center;
   margin: 51px 60.95% 0px 0%;
   position: relative;
-  width: 50%;
+  max-width: 900px;
+  max-height: 220px;
+
   @media (max-width: 720px) {
     width: 100%;
   }
+
+  @media (min-width: 4000px) {
+    align-items: normal;
+  }
+
 }
 
 .titulos_Subtitulo_Cabecalho__Cadastrar__JaSou {
@@ -30,6 +37,9 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   margin: 0;
   font-style: italic;
   cursor: pointer;
+  font-size: clamp(0.562560rem, 2vw, 4.688rem);
+  font-weight: 400;
+  opacity: 0.5;
 
   &:hover {
     color: rgba(255, 255, 255, 0.698);

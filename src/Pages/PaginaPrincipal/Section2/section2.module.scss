@@ -14,6 +14,9 @@ $font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
   flex-grow: 1;
   min-height: 978px;
   position: relative;
+  width: 100vw;
+  max-height: 1600px;
+  max-width: 5000px;
 }
 
 .introducao__ConteudoPrincipal {
@@ -25,17 +28,26 @@ $font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
   position: relative;
   width: 88.43%;
 }
-
 .introducao__LinhasDivisorias {
   height: 193px;
-  left: 2px;
-  object-fit: cover;
   position: absolute;
-  right: -11px;
+  left: 50%;
+  transform: translateX(-50%); // Centraliza a imagem
   top: 10px;
-  width: calc(100% - 2px - -11px);
+  width: 102%; // Aumenta a largura para cobrir além dos limites
+  max-width: none; // Remove qualquer restrição de largura máxima
+  object-fit: cover;
 
   @media (max-width: 720px) {
     top: 0px;
   }
+
+  @media (min-width: 1710px) {
+    width: 120%; // Aumenta a largura para telas maiores
+  }
+
+  @media (min-width: 3500px) {
+    width: 125.5%; // Aumenta a largura para telas maiores
+  }
+
 }

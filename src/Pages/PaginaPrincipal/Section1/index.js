@@ -15,18 +15,16 @@ function RenderSection1(props) {
 
   return (
     <section className={styles.topo_Pagina}>
-      <div className={styles.topo_Pagina1}>
-        <img
-          className={styles.topo_Pagina__Estudante}
-          src={studentImage}
-          alt="Estudante Sentado"
-        />
-        <div className={styles.topo_Pagina__Conteudo}>
-          <Header />
-          <TitleSubtitle />
-          <Buttons />
-        </div>
+      <div className={styles.topo_Pagina__Conteudo}>
+        <Header />
+        <TitleSubtitle />
+        <Buttons />
       </div>
+      <img
+        className={styles.topo_Pagina__Estudante}
+        src={studentImage}
+        alt="Estudante Sentado"
+      />
     </section>
   );
 }

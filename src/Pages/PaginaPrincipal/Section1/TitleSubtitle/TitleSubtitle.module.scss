@@ -11,6 +11,7 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   gap: 18px 0px;
   margin: 39px 31px 0px 0px;
   position: relative;
+  max-width: 100%;
   
   @media (max-width: 720px) {
     align-items: center;
@@ -25,11 +26,20 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   display: flex;
   font: $font_type_0;
   letter-spacing: 0px;
-  font-size: clamp(1.5rem, 4vw, 4rem);
+  font-size: clamp(1.5rem, 4vw, 12.5rem);
 
   @media (max-width: 720px) {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+    font-size: 26px;
   }
+
+  @media (max-width: 600px) {
+    font-size: 48px;
+  }
+  @media (max-width: 400px) {
+    font-size: 32px;
+  }
+
 }
 
 .titulos_Subtitulo_Cabecalho__Subtitulo {
@@ -37,8 +47,12 @@ $font_type_2: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
   font: $font_type_2;
   letter-spacing: 0px;
   margin: 0px 10px 0px 0px;
+  font-size: clamp(0.562560rem, 2vw, 4.688rem);
+  font-weight: 400;
+
   @media (max-width: 600px) {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+    font-size: 24px;
   }
 }

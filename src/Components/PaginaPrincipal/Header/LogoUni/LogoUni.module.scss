@@ -3,25 +3,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; // largura padrão para telas grandes
-  height: 74px;
+  width: 13.62vw; // 235/1728 * 100
+  height: 4.29vw; // 74/1728 * 100
   cursor: pointer;
-
-  @media (max-width: 720px) {
-    max-width: 64px; // Largura máxima para telas pequenas
-  }
-
+  max-width: 660px;
+  max-height: 214px;
 }
 
 .logo {
   position: absolute;
-  width: 100%; // garante que a logo ocupe toda a largura da div
-  height: auto; // mantém a proporção da imagem
+  width: 100%;
+  height: 100%;
   transition: opacity 300ms ease-out;
-  max-height: 100%;
+  object-fit: contain;
 
   @media (max-width: 720px) {
     max-width: 64px; // Largura máxima para telas pequenas
+    min-height: 75px;
   }
 
 }

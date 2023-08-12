@@ -21,10 +21,16 @@ $padding_type_0: undefinedpx undefinedpx undefinedpx undefinedpx;
 
 .icon {
   bottom: 20px;
-  height: 40px;
+  height: auto;
   object-fit: cover;
   position: fixed;
   right: 20px;
-  width: 40px;
+  width: 3vw;
   cursor: pointer;
+
+  min-width: 40px;
+
+  @media (min-width: 5000px) {
+    opacity: 0;
+  }
 }

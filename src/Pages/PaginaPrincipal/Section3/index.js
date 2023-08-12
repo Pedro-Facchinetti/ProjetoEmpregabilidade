@@ -34,7 +34,7 @@ function Section3() {
         backgroundImage: `url(${require('Assets/LogoBackground.png')})`,
         backgroundSize: 'contain', 
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center bottom',
       }}      
     >
       <div className={styles.apresentacao__Conteudo}>
