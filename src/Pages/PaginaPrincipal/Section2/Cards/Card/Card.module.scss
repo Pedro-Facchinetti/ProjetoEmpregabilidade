@@ -1,0 +1,81 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+$color_type_0: rgb(0, 0, 0);
+
+$bg_color_type_0: rgb(239, 237, 230);
+
+$border_radius_type_0: 10px 10px 10px 10px;
+
+$font_type_0: 700 20px/1.14 "Raleway", Helvetica, Arial, serif;
+
+.cardWrapper {
+  flex: 1 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  padding: 0 10px;
+  transform: scale(0.3);
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: $bg_color_type_0;
+  border-radius: 0.58vw 0.58vw 0.58vw 0.58vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px;
+  outline: 4px solid rgb(0, 0, 0);
+  outline-offset: -4px;
+  position: relative;
+  height: 12.92vw;
+  width: 22.92vw;
+  max-width: 1200px;
+  max-height: 560px;
+
+  @media (max-width: 600px) {
+    min-height: 150px;
+    min-width: 300px;
+    margin: auto;
+  }
+
+}
+
+.card__icon {
+  height: 4.29vw;
+  left: 0px;
+  margin: 0px auto;
+  object-fit: cover;
+  position: absolute;
+  right: 0px;
+  top: 21px;
+  width: 4.29vw;
+  max-width: 215px;
+  max-height: 215px;
+
+  @media (max-width: 600px) {
+    min-height: 50px;
+    min-width: 50px;
+  }
+}
+
+.card__title {
+  color: $color_type_0;
+  display: flex;
+  flex-grow: 1;
+  font: $font_type_0;
+  justify-content: center;
+  letter-spacing: 0px;
+  margin-top: 3vh;
+  text-align: center;
+  font-size: clamp(0.468800rem, 1.5vw, 3.91rem);
+  font-weight: 700;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 5000px) {
+      margin-top: 99px;
+    }
+
+}

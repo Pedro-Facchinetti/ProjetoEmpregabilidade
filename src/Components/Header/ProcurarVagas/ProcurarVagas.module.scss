@@ -1,16 +1,16 @@
-.quem-somos {
-  font-size: clamp(0.562560rem, 2vw, 4.688rem);
-  font-weight: 700;
+.procurar-vagas {
+  font-size: clamp(14px, 3vw, 24px);
+  font-weight: 400;
   transition: color 300ms ease-out;
   cursor: pointer;
-  white-space: nowrap;
 
   &:hover {
     color: #4B247B;
   }
 
   @media (max-width: 600px) {
-    font-size: 24px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 15px;
   }
 }

@@ -1,0 +1,53 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+$color_type_0: rgb(255, 255, 255);
+
+$font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
+$font_type_1: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
+$font_type_2: 1em/1.37 "Open Sans", Helvetica, Arial, serif;
+$font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 978px;
+  position: relative;
+  width: 100vw;
+  max-height: 1600px;
+  max-width: 5000px;
+}
+
+.introducao__ConteudoPrincipal {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 155px 0px;
+  margin: 207px 5.79% 60px;
+  position: relative;
+  width: 88.43%;
+}
+.introducao__LinhasDivisorias {
+  height: 193px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); // Centraliza a imagem
+  top: 10px;
+  width: 102%; // Aumenta a largura para cobrir além dos limites
+  max-width: none; // Remove qualquer restrição de largura máxima
+  object-fit: cover;
+
+  @media (max-width: 720px) {
+    top: 0px;
+  }
+
+  @media (min-width: 1710px) {
+    width: 120%; // Aumenta a largura para telas maiores
+  }
+
+  @media (min-width: 3500px) {
+    width: 125.5%; // Aumenta a largura para telas maiores
+  }
+
+}

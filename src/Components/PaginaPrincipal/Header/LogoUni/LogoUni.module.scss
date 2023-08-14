@@ -1,12 +1,29 @@
 .logo-uni {
-    position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13.62vw; // 235/1728 * 100
+  height: 4.29vw; // 74/1728 * 100
+  cursor: pointer;
+  max-width: 660px;
+  max-height: 214px;
 }
 
 .logo {
-    position: absolute;
-    transition: opacity 300ms ease-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 300ms ease-out;
+  object-fit: contain;
+
+  @media (max-width: 720px) {
+    max-width: 64px; // Largura máxima para telas pequenas
+    min-height: 75px;
+  }
+
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }

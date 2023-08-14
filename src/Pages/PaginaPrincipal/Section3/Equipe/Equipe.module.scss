@@ -1,0 +1,53 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+$color_type_0: rgb(255, 255, 255);
+$font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
+
+.equipe {
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0px;
+  margin: 0px 12.76% 0px 12.7%;
+  position: relative;
+  width: 74.54%;
+  
+  @media (max-width: 720px) {
+    margin: auto; // Margens reduzidas
+    width: 100%;
+    align-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+.titulo {
+  color: $color_type_0;
+  font: $font_type_0;
+  letter-spacing: 0px;
+  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4980392156862745);
+  text-align: center; // Centraliza o texto
+  margin-top: 50px; // Adiciona a margem superior
+  font-size: clamp(1.5rem, 4vw, 12.5rem);
+  
+
+  @media (max-width: 720px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 44px;
+  }
+  @media (max-width: 400px) {
+    font-size: 32px;
+  }
+}
+
+.membros {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap:  5vw;
+}

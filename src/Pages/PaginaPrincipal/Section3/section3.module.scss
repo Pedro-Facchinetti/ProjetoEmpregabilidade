@@ -1,0 +1,29 @@
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  min-height: 1108px;
+  width: 100vw;
+  max-width: 5000px;
+  max-height: 2600px;
+}
+
+.apresentacao__Conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 88.43%; // Mantendo a proporção original
+  margin: 2.72vw auto; // 47/1728 * 100
+
+  @media (min-width: 5000px) {
+
+    margin-top: 200px;
+    margin-right: 280px;
+    margin-left: 280px;
+    margin-bottom: 0px;
+    
+  }
+
+}

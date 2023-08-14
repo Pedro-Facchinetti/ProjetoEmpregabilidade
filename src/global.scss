@@ -28,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: #191919;
 }
 
 ol, ul {
@@ -48,4 +47,27 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* SimpleBar CSS */
+.simplebar-track.simplebar-vertical .simplebar-scrollbar {
+  background: #883BEC; /* Cor da barra de rolagem (thumb) */
+  border-radius: 20px; /* Arredondamento das bordas */
+  width: 3px !important; /* Largura da barra de rolagem vertical */
+}
+
+.simplebar-track.simplebar-vertical {
+  background: #d9d9d94c; /* Fundo da barra de rolagem vertical */
+  width: 3px !important; /* Largura da barra de rolagem vertical */
+
+}
+
+.simplebar-scrollbar:before {
+  content: '';
+  display: none; /* Esconde o conteúdo extra */
+
+}
+
+.simplebar-mask {
+  background: #883BEC; /* Cor do fundo da máscara */
 }
