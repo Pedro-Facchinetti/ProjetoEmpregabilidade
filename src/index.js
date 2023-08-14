@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
-import PaginaPrincipal from 'Pages/PaginaPrincipal';
+import Homealuno from 'Pages/Aluno/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className='content'>
     <SimpleBar style={{ maxHeight: '100vh' }}>
-      <PaginaPrincipal/>
+      <Homealuno/>
     </SimpleBar>
     </div>
   </React.StrictMode>
