@@ -17,17 +17,21 @@ function PaginaLoginTeste() {//o react pega uma função JavaScript que retorna 
         </div>
       </div>
       <div className='container-right'>
+
         <div>
           <img className='container-rigth-img' src={linha} alt='Linha da borda'></img>
         </div>
+
         <div>
           <a className='container-right-text-voltar' href='voltar'>
             voltar
           </a>
         </div>
+        
         <div className='container-login'>
           <div className='wrap-login'>
             <form className='login-form'>
+
               <img className='login-form-img' src={logo} alt="UNICEPLAC" />
 
               <div className='input-container'>
