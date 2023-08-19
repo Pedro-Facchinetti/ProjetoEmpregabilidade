@@ -2,10 +2,10 @@ import { useState } from 'react';
 import logo from 'Assets/PaginaLogin/UNICEPLAC.svg'//depois do import eu nomeio o arquivo como eu quero, depois importo a imagem que eu quero da pasta assets
 import pessoa_login from 'Assets/PaginaLogin/Imagem pessoa login.png';
 import linha from 'Assets/PaginaLogin/Linhas canto inf. dir..svg'
-import './styles.scss'
+import './style.scss'
 import Button from 'Components/Button';
 
-function PaginaLoginTeste() {//o react pega uma função JavaScript que retorna html, que vai ser exportada e importada no index.js, que vai ser repassado pra nossa id 'root'
+function PaginaLogin() {//o react pega uma função JavaScript que retorna html, que vai ser exportada e importada no index.js, que vai ser repassado pra nossa id 'root'
   const [email, setEmail] = useState("")//por padrão o React não altera diretamente o valor da variavel. ele vai receber um valor na variável setEmail, e repassar esse valor para a variável email para que o texto não fique em cima do outro no login.
   const [password, setPassword] = useState("")
 
@@ -22,17 +22,14 @@ function PaginaLoginTeste() {//o react pega uma função JavaScript que retorna 
           <img className='container-rigth-img' src={linha} alt='Linha da borda'></img>
         </div>
 
-        <div>
-          <a className='container-right-text-voltar' href='voltar'>
-            voltar
-          </a>
-        </div>
-        
-        <div className='container-login'>
-          <div className='wrap-login'>
-            <form className='login-form'>
+        <a className='container-right-text-voltar' href='voltar'>
+          Voltar
+        </a>
 
-              <img className='login-form-img' src={logo} alt="UNICEPLAC" />
+        <div className='container-login'>
+          <img className='login-form-img' src={logo} alt="UNICEPLAC"/>
+          <form className='login-form'>
+            <div className='login-form-left'>
 
               <div className='input-container'>
                 <div className="wrap-input">
@@ -54,23 +51,25 @@ function PaginaLoginTeste() {//o react pega uma função JavaScript que retorna 
                   />
                   <span className="focus-input" data-placeholder="Senha"></span>
                 </div>
+                <div className='text-center'>
+                  <a className='txt' href='Esqueci-minha-senha'>Esqueci minha senha</a>
+                </div>
               </div>
+            </div>
 
+            <div className='login-form-line'/>
+
+            <div className='login-form-rigth'>
               <div className='container-login-form-btn'>
                 <Button label='ENTRAR' />
               </div>
+            </div>
 
-              <div className='text-center'>
-                <span className='txt1'>Não possui conta?</span>
-                <a className='txt2' href='Pagina-de-criação-de-conta'>Criar conta.</a>
-              </div>
-
-            </form>
-          </div>
+          </form>
         </div>
       </div>
     </div>
   );
 }
 
-export default PaginaLoginTeste;
+export default PaginaLogin;
