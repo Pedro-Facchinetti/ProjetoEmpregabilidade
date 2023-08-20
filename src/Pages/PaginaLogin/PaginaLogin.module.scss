@@ -9,7 +9,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     margin: auto;
 }
 
-.container-letf {
+.container_letf {
     display: flex;
     position: relative;
     width: 30%;
@@ -17,12 +17,12 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     object-fit: fill;
 }
 
-.container-left-img {
-    width: fit-content;
+.container_left_img {
+    width: fit_content;
     height: 99vh;
 }
 
-.container-right {
+.container_right {
     position: relative;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     height: 100vh;
 }
 
-.container-rigth-img {
+.container_rigth_img {
     position: absolute;
     display: flex;
     width: fit-content;
@@ -39,7 +39,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     bottom: 0;
 }
 
-.container-right-text-voltar {
+.container_right_text_voltar {
     position: absolute;
     color: #999;
     right: 0;
@@ -51,7 +51,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     text-decoration: underline;
 }
 
-.container-login {
+.container_login {
 
     width: 100%;
     min-height: 100vh;
@@ -64,7 +64,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     background-color: #191919;
 }
 
-.wrap-login {
+.wrap_login {
     display: flex;
     width: 390px;
     border-radius: 10px;
@@ -74,20 +74,20 @@ $font_type_0: 300 18px/1.16 "Open Sans";
 
 }
 
-.login-form {
+.login_form {
     justify-content: center;
     display: flex;
     flex-direction: row;
     width: 50%;
 }
 
-.login-form-left {
+.login_form_left {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.login-form-line{
+.login_form_line {
     align-self: center;
     width: 3px;
     height: 150px;
@@ -97,25 +97,25 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     margin: 0px 0px 0px 30px;
 }
 
-.login-form-rigth {
+.login_form_rigth {
     justify-content: center;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.login-form-img {
+.login_form_img {
     align-self: center;
     width: 182px;
-height: 56px;
-flex-shrink: 0;
+    height: 56px;
+    flex-shrink: 0;
 }
 
-.input-container {
+.input_container {
     margin: 20px 0px 20px 0px;
 }
 
-.wrap-input {
+.wrap_input {
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
@@ -134,7 +134,7 @@ flex-shrink: 0;
     background-color: transparent;
 }
 
-.focus-input {
+.focus_input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -146,7 +146,7 @@ flex-shrink: 0;
     color: #adadad;
 }
 
-.focus-input::before {
+.focus_input::before {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -159,12 +159,13 @@ flex-shrink: 0;
     background: #391863;
 }
 
-.focus-input::after {//escritas placeholder
+.focus_input::after {
+    //escritas placeholder
     font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
     color: #999;
     line-height: 1.2;
 
-    content: attr(data-placeholder);
+    content: attr(data_placeholder);
 
     width: 100%;
     position: absolute;
@@ -181,31 +182,31 @@ flex-shrink: 0;
     outline: 0;
 }
 
-.input:focus+.focus-input::after {
+.input:focus+.focus_input::after {
     top: -15px;
 }
 
-.input:focus+.focus-input::before {
+.input:focus+.focus_input::before {
     width: 100%;
 }
 
-.has-val+.focus-input::after {
+.has_val+.focus_input::after {
     top: -15px;
 }
 
-.has-val+.focus-input::before {
+.has_val+.focus_input::before {
     width: 100%;
 }
 
-
-.container-login-form-btn {
+.container_login_form_btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 0;
+    border-radius: 0px;
 }
 
-.Button_button__iWaxM{
+.Button_button__iWaxM {
     cursor: pointer;
     height: 4.45vw;
     display: flex;
@@ -219,13 +220,12 @@ flex-shrink: 0;
     width: auto;
     max-width: 900px;
     max-height: 220px;
-    border-radius: 0px;
     min-height: 40px;
 }
 
-.Button_label__U2nSI{
+.Button_label__U2nSI {
     color: #efede6;
-    font-family: "Open Sans-Bold", Helvetica;
+    font-family: "Open Sans_Bold", Helvetica;
     font-size: clamp(0.56256rem, 1.5vw, 4.688rem);
     font-weight: 700;
     letter-spacing: 0;
@@ -237,7 +237,7 @@ flex-shrink: 0;
     white-space: nowrap;
 }
 
-.text-center {
+.text_center {
     display: flex;
     justify-content: center;
     align-items: center;
