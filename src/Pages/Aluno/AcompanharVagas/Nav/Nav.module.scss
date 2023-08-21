@@ -1,0 +1,79 @@
+@use "/src/utils.scss" as *;
+
+$color_type_1: rgb(255, 255, 255);
+
+$bg_color_type_0: rgb(212, 212, 212);
+$bg_color_type_1: rgb(217, 217, 217);
+
+$border_radius_type_1: 24.5px 24.5px 24.5px 24.5px;
+$border_radius_type_3: 5px 5px 5px 5px;
+
+$font_type_2: 700 24px/1.16 "Raleway", Helvetica, Arial, serif;
+
+.Nav {
+    display: flex;
+    flex: 0 0 465px;
+    flex-direction: column;
+    gap: 2.58vh;
+    margin-left: 100px;
+    margin-right: 86px;
+    position: relative;
+    width: 26.9vw;
+    padding-top: 20px;
+  }
+  .Nav__Pesquisa {
+    display: flex;
+    flex-direction: column;
+    gap: 22px 0px;
+    width: 26.9vw;
+    margin-bottom: 2.58vh;
+}
+  .Nav__Pesquisa__Titulo {
+    align-items: center;
+    color: $color_type_1;
+    display: flex;
+    font: $font_type_2;
+    letter-spacing: 0px;
+    @include lg {
+      font-size: 20px;
+    }
+    @include sm {
+      font-size: 16px;
+    }
+    @include tn {
+      font-size: 12px;
+    }
+  }
+  .Nav__Pesquisa__Barra {
+    background-color: $bg_color_type_1;
+    border-radius: $border_radius_type_1;
+    display: grid;
+    position: relative;
+  }
+  .Nav__Pesquisa__Barra__Icone {
+    flex-grow: 1;
+    height: 18px;
+    margin: 15px 93.55% 16px 2.58%;
+    min-height: 18px;
+    object-fit: cover;
+    width: 18px;
+  }
+  .Nav__CardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.43vh;  // Espaço entre os cards
+    width: 30vw; // Definindo a largura do container dos cards
+}
+  .Nav__CardsContainer__CardVaga {
+    background-color: $bg_color_type_0;
+    border-radius: $border_radius_type_3;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.247);
+    display: grid;
+    position: relative;
+  }
+
+  .Card {
+    position: relative;
+    width: 26.9vw;
+  }
+  

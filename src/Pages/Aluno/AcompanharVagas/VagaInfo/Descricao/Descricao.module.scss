@@ -1,0 +1,58 @@
+@use "/src/utils.scss" as *;
+
+$color_type_1: rgb(255, 255, 255);
+$font_type_0: 700 36px/1.16 "Raleway", Helvetica, Arial, serif;
+$font_type_4: 400 20px/1.35 "Open Sans", Helvetica, Arial, serif;
+
+.descricaoContainer{
+    margin: 0px 9.1% 0px 6.31%;
+}
+
+.descricaoTitulo {
+    align-items: center;
+    color: $color_type_1;
+    display: flex;
+    font: $font_type_0;
+    letter-spacing: 0px;
+    @include lg {
+        font-size: 32px;
+    }
+    @include md {
+        font-size: 28px;
+    }
+    @include sm {
+        font-size: 24px;
+    }
+    @include xxs {
+        font-size: 20px;
+    }
+    @include tn {
+        font-size: 16px;
+    }
+}
+
+.subTitulo {
+    color: $color_type_1;
+    font: $font_type_0;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.conteudo {
+    color: $color_type_1;
+    font: $font_type_4;
+    letter-spacing: 0px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    @include lg {
+        font-size: 20px;
+    }
+    @include sm {
+        font-size: 16px;
+    }
+    @include tn {
+        font-size: 12px;
+    }
+}

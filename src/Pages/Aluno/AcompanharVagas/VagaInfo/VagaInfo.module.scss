@@ -1,0 +1,44 @@
+@use "/src/utils.scss" as *;
+
+$bg_color_type_4: rgb(58, 58, 58);
+$bg_color_type_5: rgb(75, 36, 123);
+$bg_color_type_2: rgb(25, 25, 25);
+$bg_color_type_3: rgb(255, 255, 255);
+$color_type_1: rgb(255, 255, 255);
+$border_radius_type_0: 10px 10px 10px 10px;
+$font_type_4: 400 20px/1.35 "Open Sans", Helvetica, Arial, serif;
+$font_type_5: 400 16px/1.37 "Open Sans", Helvetica, Arial, serif;
+
+.procurarVagas__Content__VagaInfo {
+  background-color: $bg_color_type_4;
+  display: grid;
+  grid-gap: 20px;
+  position: relative;
+  background-color: #3A3A3A;
+  width: 100%;
+}
+
+.procurarVagas__Content__VagaInfo__Botoes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+.procurarVagas__Content__VagaInfo__BotaoInscrever {
+  background-color: $bg_color_type_5;
+  border-radius: $border_radius_type_0;
+  display: grid;
+  height: 43px;
+  width: 155px;
+  color: $color_type_1;
+  font: $font_type_5;
+  text-align: center;
+  line-height: 43px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg_color_type_5, 10%);
+  }
+}

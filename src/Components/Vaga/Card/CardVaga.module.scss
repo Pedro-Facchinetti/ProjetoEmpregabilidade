@@ -5,6 +5,11 @@
     gap: 9px 0px;
     margin: 0px 0px 17px;
     position: relative;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.247);
+    margin: 0px auto 0px 0px;
+    padding-bottom: 20px;
   }
   
   .home__vaga__Card__banner {
@@ -19,15 +24,16 @@
     display: flex;
     margin: 0px 15px;
     position: relative;
+    flex-wrap: wrap;
   }
   
   .home__vaga__Card__Conteudo__Apresentacao {
     display: flex;
-    flex: 0 0 250px;
+    flex: 1;
+    max-width: calc(100% - 140px);
     flex-direction: column;
     gap: 11px 0px;
-    position: relative;
-  }
+}
   
   .home__vaga__Card__Conteudo__Apresentacao__Nome {
     align-items: center;
@@ -35,7 +41,10 @@
     display: flex;
     font: 700 20px/1.35 "Open Sans", Helvetica, Arial, serif;
     letter-spacing: 0px;
-  }
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
   
   .home__vaga__Card__Conteudo__Apresentacao__TipoVaga,
   .home__vaga__Card__Conteudo__Apresentacao__Localidade {
@@ -71,6 +80,7 @@
     font: 400 16px/1.37 "Open Sans", Helvetica, Arial, serif;
     letter-spacing: 0px;
     margin: 0px 0px 0px 5px;
+    font-size: 12px;
   }
   
   .home__vaga__Card__Conteudo__spacer {
@@ -79,12 +89,12 @@
   
   .home__vaga__Card__Conteudo__Botao {
     background-color: rgb(75, 36, 123);
-    border-radius: 5px 5px 5px 5px;
-    display: grid;
-    flex: 0 0 128px;
-    margin: 59px 0px 0px;
-    position: relative;
-  }
+    border-radius: 5px;
+    max-width: 130px; // Largura máxima para o botão
+    margin-left: auto; // Empurra para a direita
+    flex: 0 0 auto; // Não permite que o botão cresça, mas permite que ele encolha
+    margin-top: -30px;
+}
   
   .highlight11 {
     align-items: center;
