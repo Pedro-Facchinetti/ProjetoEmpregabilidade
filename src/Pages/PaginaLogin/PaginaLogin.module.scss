@@ -123,16 +123,6 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     margin-bottom: 30px;
 }
 
-.input {
-    font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
-    color: white;
-    line-height: 1.2;
-    border: none;
-    width: 100%;
-    height: 50px;
-    background-color: transparent;
-}
-
 .focus_input {//linha de baixo
     position: absolute;
     width: 100%;
@@ -198,7 +188,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     color: #391863;
 }
 
-.has_val__input,
+.input, .has_val__input,
 .focus_input {
   border: none; 
   background-color: transparent; 
@@ -206,7 +196,6 @@ $font_type_0: 300 18px/1.16 "Open Sans";
   color: white; 
   font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
   line-height: 2;
-  border: none;
   width: 100%;
   height: 50px;
   background-color: transparent;

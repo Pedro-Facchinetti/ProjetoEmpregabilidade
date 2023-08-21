@@ -29,18 +29,18 @@ function PaginaCadastro() {//o react pega uma função JavaScript que retorna ht
         </a>
 
         <div className={styles.container_cadastro}>
-          <img className={tyles.cadastro_form_img} src={logo} alt="UNICEPLAC" />
+          <img className={styles.cadastro_form_img} src={logo} alt="UNICEPLAC" />
           <form className={styles.cadastro_form}>
 
               <div className={styles.input_container}>
                 <div className={styles.wrap_input}>
                   <input
                     className={name !== "" ? styles.has_val : styles.input}//o ? é um if ternário
-                    type="name"
+                    type="text"
                     value={name}//pegamos o valor do email
                     onChange={e => setName(e.target.value)}//capturamos o valor do email com o onChange, que pega o setEmail e repassa o valor para essa variável.
                   />
-                  <span className="focus_input" data_placeholder="Nome completo"></span>
+                  <span className={styles.focus_input} data_placeholder="Nome completo"></span>
                 </div>
 
                 <div className={styles.wrap_input}>
@@ -50,7 +50,7 @@ function PaginaCadastro() {//o react pega uma função JavaScript que retorna ht
                     value={email}//pegamos o valor do email
                     onChange={e => setEmail(e.target.value)}//capturamos o valor do email com o onChange, que pega o setEmail e repassa o valor para essa variável.
                   />
-                  <span className="focus_input" data_placeholder="Email institucional"></span>
+                  <span className={styles.focus_input} data_placeholder="Email institucional"></span>
                 </div>
 
                 <div className={styles.wrap_input}>
@@ -60,25 +60,15 @@ function PaginaCadastro() {//o react pega uma função JavaScript que retorna ht
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                   />
-                  <span className="focus_input" data_placeholder="Senha"></span>
-                </div>
-                
-                <div className={styles.wrap_input}>
-                  <input
-                    className={confirmPassword !== "" ? 'has_val input' : 'input'}
-                    type='password'
-                    value={confirmPassword}
-                    onChange={e => setconfirmPassword(e.target.value)}
-                  />
-                  <span className="focus_input" data_placeholder="Confirmar senha"></span>
+                  <span className={styles.focus_input} data_placeholder="Senha"></span>
                 </div>
 
-                <div className='text_center'>
-                  <span className='txt'>Verifique as informações colocadas antes de cadastrar!</span>
+                <div className={styles.text_center}>
+                  <span className={styles.txt}>Verifique as informações colocadas antes de cadastrar!</span>
                 </div>
               </div>
 
-              <div className='container_cadastro_form_btn'>
+              <div className={styles.container_cadastro_form_btn}>
                 <Button label='ENTRAR' />
               </div>
 
