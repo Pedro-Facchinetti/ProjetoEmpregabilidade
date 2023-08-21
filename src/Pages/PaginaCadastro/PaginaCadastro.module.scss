@@ -53,7 +53,6 @@ $font_type_0: 400 "Open Sans";
 }
 
 .container_cadastro {
-
     width: 100%;
     min-height: 100vh;
 
@@ -99,9 +98,10 @@ $font_type_0: 400 "Open Sans";
     left: 0;
 
     pointer-events: none;
+    color: #adadad;
 }
 
-.focus_input::before {
+.focus_input::before {//animação
     content: "";
     position: absolute;
     bottom: -2px;
@@ -110,6 +110,8 @@ $font_type_0: 400 "Open Sans";
     height: 2px;
 
     transition: all 0.4s;
+
+    background: #391863;
 }
 
 .focus_input::after {
@@ -143,17 +145,16 @@ $font_type_0: 400 "Open Sans";
     width: 100%;
 }
 
-.has_val+.focus_input::after {
+.has_val__input+.focus_input::after {
     top: -15px;
 }
 
-.has_val+.focus_input::before {
+.has_val__input+.focus_input::before {
     width: 100%;
     color: #391863;
 }
 
-.input, .has_val,
-.focus_input {
+.input, .has_val__input {
   border: none; 
   background-color: transparent; 
   outline: 0;
