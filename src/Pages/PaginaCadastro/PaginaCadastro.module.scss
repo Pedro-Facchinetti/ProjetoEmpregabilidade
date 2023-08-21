@@ -1,0 +1,220 @@
+$font_type_0: 400 "Open Sans";
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.container_letf {
+    display: flex;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.container_left_img {
+    width: fit-content;
+    height: 99vh;
+}
+
+.container_right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_rigth_img {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    right: 0;
+    bottom: 0;
+}
+
+.container_right_text_voltar {
+    position: absolute;
+    color: #999;
+    right: 0;
+    margin: 15px;
+
+    font-family: 'Open sans';
+    font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+    
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.container_cadastro {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #191919;
+}
+
+.cadastro_form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.cadastro_form_img {
+    align-self: center;
+    width: fit-content;
+    height: 10vh;
+}
+
+.input_container {
+    margin: 20px 0px 20px 0px;
+}
+
+.wrap_input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.focus_input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+}
+
+.focus_input::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+
+    transition: all 0.4s;
+}
+
+.focus_input::after {
+    //escritas placeholder
+    font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+    color: #999;
+    line-height: 1.2;
+
+    content: attr(data_placeholder);
+
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+
+    padding-left: 5px;
+
+    transition: all 0.5s;
+}
+
+/*Animação com o foco da digitação*/
+.input:focus {
+    outline: 0;
+}
+
+.input:focus+.focus_input::after {
+    top: -15px;
+}
+
+.input:focus+.focus_input::before {
+    width: 100%;
+}
+
+.has_val+.focus_input::after {
+    top: -15px;
+}
+
+.has_val+.focus_input::before {
+    width: 100%;
+    color: #391863;
+}
+
+.input, .has_val,
+.focus_input {
+  border: none; 
+  background-color: transparent; 
+  outline: 0;
+  color: white; 
+  font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+  line-height: 2;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+}
+
+.container_cadastro_form_btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.Button_button__iWaxM {
+    cursor: pointer;
+    height: 4.45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #391863;
+    border: 2px solid #efede6;
+    padding: 1.27vw 2.66vw;
+    position: relative;
+    transition: all 0.3s ease;
+    width: auto;
+    max-width: 900px;
+    max-height: 220px;
+    border-radius: 0px;
+    min-height: 40px;
+}
+
+.Button_label__U2nSI {
+    color: #efede6;
+    font-family: "Open Sans_Bold", Helvetica;
+    font-size: clamp(0.56256rem, 1.5vw, 4.688rem);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 0px;
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.text_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.txt {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: 'Open sans';
+    font-size: 18px;
+    font-style: italic;
+}
