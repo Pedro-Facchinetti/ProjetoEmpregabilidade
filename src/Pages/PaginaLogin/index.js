@@ -27,14 +27,14 @@ function PaginaLogin() {//o react pega uma função JavaScript que retorna html,
         </a>
 
         <div className={styles.container_login}>
-          <img className={styles.login_form_img} src={logo} alt="UNICEPLAC"/>
+          <img className={styles.login_form_img} src={logo} alt="UNICEPLAC" />
           <form className={styles.login_form}>
             <div className={styles.login_form_left}>
 
               <div className={styles.input_container}>
                 <div className={styles.wrap_input}>
                   <input
-                    className={email !== "" ? styles.has_val : styles.input}//o ? é um if ternário
+                    className={email !== "" ? styles.has_val__input : styles.input}//o ? é um if ternário
                     type="email"
                     value={email}//pegamos o valor do email
                     onChange={e => setEmail(e.target.value)}//capturamos o valor do email com o onChange, que pega o setEmail e repassa o valor para essa variável.
@@ -44,7 +44,7 @@ function PaginaLogin() {//o react pega uma função JavaScript que retorna html,
 
                 <div className={styles.wrap_input}>
                   <input
-                    className={password !== "" ? styles.has_val : styles.input}
+                    className={password !== "" ? styles.has_val__input : styles.input}
                     type="password"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
@@ -57,14 +57,13 @@ function PaginaLogin() {//o react pega uma função JavaScript que retorna html,
               </div>
             </div>
 
-            <div className={styles.login_form_line}/>
+            <div className={styles.login_form_line} />
 
             <div className={styles.login_form_rigth}>
               <div className={styles.container_login_form_btn}>
                 <Button label='ENTRAR' />
               </div>
             </div>
-
           </form>
         </div>
       </div>

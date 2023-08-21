@@ -118,8 +118,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
 .wrap_input {
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #adadad;
-    /*cor da linha de baixo*/
+    border-bottom: 2px solid #adadad;//cor da linha de baixo
     margin-top: 15px;
     margin-bottom: 30px;
 }
@@ -130,11 +129,11 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     line-height: 1.2;
     border: none;
     width: 100%;
-    height: 45px;
+    height: 50px;
     background-color: transparent;
 }
 
-.focus_input {
+.focus_input {//linha de baixo
     position: absolute;
     width: 100%;
     height: 100%;
@@ -146,7 +145,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     color: #adadad;
 }
 
-.focus_input::before {
+.focus_input::before {//linha de baixo animação
     content: "";
     position: absolute;
     bottom: -2px;
@@ -190,51 +189,34 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     width: 100%;
 }
 
-.has_val+.focus_input::after {
+.has_val__input+.focus_input::after {
     top: -15px;
 }
 
-.has_val+.focus_input::before {
+.has_val__input+.focus_input::before {
     width: 100%;
+    color: #391863;
+}
+
+.has_val__input,
+.focus_input {
+  border: none; 
+  background-color: transparent; 
+  outline: 0;
+  color: white; 
+  font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+  line-height: 2;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
 }
 
 .container_login_form_btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 0;
     border-radius: 0px;
-}
-
-.Button_button__iWaxM {
-    cursor: pointer;
-    height: 4.45vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #391863;
-    border: 2px solid #efede6;
-    padding: 1.27vw 2.66vw;
-    position: relative;
-    transition: all 0.3s ease;
-    width: auto;
-    max-width: 900px;
-    max-height: 220px;
-    min-height: 40px;
-}
-
-.Button_label__U2nSI {
-    color: #efede6;
-    font-family: "Open Sans_Bold", Helvetica;
-    font-size: clamp(0.56256rem, 1.5vw, 4.688rem);
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-top: 0px;
-    position: relative;
-    width: -moz-fit-content;
-    width: fit-content;
-    white-space: nowrap;
 }
 
 .text_center {
