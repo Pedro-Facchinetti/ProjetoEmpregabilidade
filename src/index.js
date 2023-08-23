@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <div className='content'>
     <SimpleBar style={{ maxHeight: '100vh' }}>
-      <PaginaCadastro/>
+      <PaginaPrincipal/>
     </SimpleBar>
     </div>
   </React.StrictMode>

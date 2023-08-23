@@ -1,0 +1,164 @@
+@use "/src/utils.scss" as *;
+
+$color_type_1: rgb(255, 255, 255);
+$font_type_0: 700 36px/1.16 "Raleway", Helvetica, Arial, serif;
+$font_type_4: 400 20px/1.35 "Open Sans", Helvetica, Arial, serif;
+$bg_color_type_2: rgb(25, 25, 25);
+$border_radius_type_0: 10px 10px 10px 10px;
+
+.TitulosSubtitulos {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+    width: 100%;
+}
+
+
+.BannerContainer {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.Icone {
+    position: absolute;
+    top: 60%;
+    left: 6.31%; // Mantenha o alinhamento à esquerda
+    transform: translateY(50%); // Move o ícone para cima em 50% de sua altura
+}
+
+.Banner{
+    width: 100%;
+}
+.Header{
+    margin: 0px 9.1% 0px 6.31%;
+}
+
+.TitulosSubtitulos__Header {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto 0px 0px;
+    position: relative;
+    width: 59.39%;
+}
+
+.TitulosSubtitulos__Header__Titulo {
+    align-items: center;
+    color: $color_type_1;
+    display: flex;
+    font: $font_type_0;
+    letter-spacing: 0px;
+    @include lg {
+        font-size: 32px;
+    }
+    @include md {
+        font-size: 28px;
+    }
+    @include sm {
+        font-size: 24px;
+    }
+    @include xxs {
+        font-size: 20px;
+    }
+    @include tn {
+        font-size: 16px;
+    }
+}
+
+.TitulosSubtitulos__Header__Subtitulo {
+    color: $color_type_1;
+    letter-spacing: 0px;
+    margin: 52px 0px 0px;
+    @include lg {
+        font-size: 16px;
+    }
+    @include tn {
+        font-size: 12px;
+    }
+}
+
+.TitulosSubtitulos__Header__Localidade {
+    align-items: center;
+    display: flex;
+    gap: 0px 10px;
+    margin: 30px 0px 0px;
+    position: relative;
+}
+
+.TitulosSubtitulos__Header__Localidade__Icone {
+    flex: 0 0 18px;
+    height: 22px;
+    margin: 3px 0px 2px;
+    min-height: 22px;
+    object-fit: cover;
+    width: 18px;
+}
+
+.TitulosSubtitulos__Header__Localidade__Texto {
+    align-items: center;
+    color: $color_type_1;
+    display: flex;
+    flex: 0 0 280px;
+    font: $font_type_4;
+    letter-spacing: 0px;
+    @include lg {
+        font-size: 16px;
+    }
+    @include tn {
+        font-size: 12px;
+    }
+}
+
+.TitulosSubtitulos__Header__TipoVaga {
+    align-items: center;
+    display: flex;
+    gap: 0px 10px;
+    margin: 32px 2px 0px;
+    position: relative;
+}
+
+.TitulosSubtitulos__Header__TipoVaga__Icone {
+    flex: 0 0 20px;
+    height: 18px;
+    margin: 5px 0px 4px;
+    min-height: 18px;
+    object-fit: cover;
+    width: 20px;
+}
+
+.TitulosSubtitulos__Header__TipoVaga__Texto {
+    align-items: center;
+    color: $color_type_1;
+    display: flex;
+    flex: 0 0 67px;
+    font: $font_type_4;
+    letter-spacing: 0px;
+    @include lg {
+        font-size: 16px;
+    }
+    @include tn {
+        font-size: 12px;
+    }
+}
+
+.BotaoVoltar {
+    position: absolute;
+    top: 10%;
+    left: 6.31%;
+    background-color: $bg_color_type_2;
+    border-radius: $border_radius_type_0;
+    display: grid;
+    height: 37px;
+    width: 108px;
+    color: $color_type_1;
+    font: $font_type_4;
+    text-align: center;
+    line-height: 37px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($bg_color_type_2, 10%);
+    }
+  }

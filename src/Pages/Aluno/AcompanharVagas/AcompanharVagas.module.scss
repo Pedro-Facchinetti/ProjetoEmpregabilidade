@@ -1,0 +1,27 @@
+@use "/src/utils.scss" as *;
+
+$bg_color_type_0: rgb(25, 25, 25);
+$padding_type_0: 0px 0px 0px 0px;
+
+.main {
+  background-color: $bg_color_type_0;
+  display: flex;
+  padding: $padding_type_0;
+  box-sizing: border-box; // Garante que o padding não afete a largura total
+}
+
+.nav {
+  flex-basis: calc(37.67% - 43px); // Subtrair metade do espaço de 86px
+  flex-grow: 1;
+  height: 100%;
+  margin-left: 100px;
+  margin-right: 43px; // Metade do espaço de 86px
+  background-color: #333;
+}
+
+.vagaInfo {
+  flex-basis: calc(62.33% - 43px); // Subtrair metade do espaço de 86px
+  flex-grow: 1;
+  height: 100%;
+  background-color: #666;
+}
