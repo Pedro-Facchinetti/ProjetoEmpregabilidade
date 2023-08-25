@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #191919;
+}
+
+.sobre__mim {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: auto;
+
+    margin: 50px 50px 25px 50px;
+    padding: 25px 50px;
+
+    border: solid #391863 1px;
+    border-radius: 25px;
+
+    background-color: #3a3a3a;
+}
