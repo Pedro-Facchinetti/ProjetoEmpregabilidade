@@ -19,10 +19,9 @@ function renderSection1(props) {
                 </div>
 
                 <div className={styles.apresentacao__bottom}>
-
                     <div className={styles.apresentacao__bottom__left}>{/*Nome do aluno, curso/info e contatos*/}
-                        <h1>Aluno fulado de Tal</h1>
-                        <h2>Curso do aluno - período | Anotação que o aluno ou tecnologia que estua, área de atução, etc. </h2>
+                        <h1>Aluno Fulano de Tal</h1>
+                        <h2>Curso do aluno - período | Anotação que o aluno ou tecnologia que estua, área de atuação, etc. </h2>
                         <p>Localidade: Local onde mora</p>
                         <p>E-mail: fulanodetal@gmail.com</p>
                         <p>Telefone: (61) 99999-9999</p>
@@ -39,7 +38,6 @@ function renderSection1(props) {
                                 <img className={styles.button__instagram__ico} src={instagramIco} alt="Instagram" />
                             </div>
                         </div>
-
                     </div>
 
                     <div className={styles.apresentacao__bottom__rigth}>{/*Resumo de competências*/}
@@ -48,18 +46,16 @@ function renderSection1(props) {
                             <span className={styles.button__competencias}>Competência</span>
                             <span className={styles.button__competencias}>Teste</span>
                             <span className={styles.button__competencias}>Competência</span>
+                            <span className={styles.button__competencias}>Teste</span>
                             <span className={styles.button__competencias}>Competência</span>
-                            <span className={styles.button__competencias}>Competência</span>
-                            <span className={styles.button__competencias}>Competência</span>
-                            <span className={styles.button__competencias}>Competência</span>
+                            <span className={styles.button__competencias}>Teste</span>
+                            <span className={styles.button__competencias}>+</span>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
     )
-
 }
 
 export default renderSection1;

@@ -23,7 +23,9 @@ $font_type_3: 400 18px/1.37 "Open Sans", Helvetica, Arial, serif;//p
     width: 100vw;
     height: auto;
 
-    margin: 50px;
+    margin: 50px 50px 25px 50px;
+
+    border: solid #391863 1px;
     border-radius: 25px;
 
     background-color: #3a3a3a;
@@ -67,28 +69,13 @@ $font_type_3: 400 18px/1.37 "Open Sans", Helvetica, Arial, serif;//p
     height: auto;
 
     border-radius: 0px 0px 25px 25px;
-    padding: 90px 50px 90px 50px;
+    padding: 90px 50px 50px 50px;
 }
 
 .apresentacao__bottom__left {
     width: 60%;
     color: white;
-}
-
-.apresentacao h1 {
-    font: $font_type_0;
-}
-
-.apresentacao h2 {
-    font: $font_type_1;
-}
-
-.apresentacao h3 {
-    font: $font_type_2;
-}
-
-.apresentacao p {
-    font: $font_type_3;
+    padding-right: 10px;
 }
 
 .wrap_botoes {
