@@ -8,15 +8,25 @@ function renderSection3(props) {
             <div className={styles.info_container}>
                 <div className={styles.container__left}>
                     <h1>Experiências</h1>
-                    <div className={styles.container__left__exp}>{/**Experiência de trabalho ou projeto*/}
-
+                    <div className={styles.container__left__info}>{/**Experiência de trabalho ou projeto*/}
+                        <div>
+                            <h3>
+                                Projeto startup | UNIECPLAC
+                            </h3>
+                            <p>
+                                Participei de uma startup como desenvolvedor back-end dentro do centro universitário Uniceplac por 3 meses.
+                            </p>
+                            <img>
+                            </img>
+                        </div>
                     </div>
                 </div>
 
                 <div className={styles.container__rigth}>
                     <h1>Línguas</h1>
-                    <div className={styles.container__rigth__linguas}>
-
+                    <div className={styles.container__rigth__info}>{/**Linguas*/}
+                        <p className={styles.language}>Inglês (Intermediario)</p>
+                        <p className={styles.language}>Portugês (Nativo)</p>
                     </div>
                 </div>
             </div>
