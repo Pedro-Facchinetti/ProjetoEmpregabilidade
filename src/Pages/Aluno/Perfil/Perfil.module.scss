@@ -1,0 +1,29 @@
+@use "./utils" as *;
+@use "./global" as *;
+
+$font_type_0: 700 36px/1.8 "Raleway", Helvetica, Arial, serif;//h1
+$font_type_1: 400 24px/1.5 "Open Sans", Helvetica, Arial, serif;//h2
+$font_type_2: 700 24px/1.5 "Open Sans", Helvetica, Arial, serif;//h3
+$font_type_3: 400 18px/1.3 "Open Sans", Helvetica, Arial, serif;//p
+
+.main_section{
+    h1{
+        font: $font_type_0;
+        color: white;
+    }
+    
+    h2 {
+        font: $font_type_1;
+        color: white;
+    }
+    
+    h3 {
+        font: $font_type_2;
+        color: white;
+    }
+    
+    p {
+        font: $font_type_3;
+        color: white;
+    }
+}

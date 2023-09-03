@@ -35,7 +35,7 @@ function PaginaCadastro() {//o react pega uma função JavaScript que retorna ht
               <div className={styles.input_container}>
                 <div className={styles.wrap_input}>
                   <input
-                    className={name !== "" ? styles.has_val : styles.input}//o ? é um if ternário
+                    className={name !== "" ? styles.has_val__input : styles.input}//o ? é um if ternário
                     type="text"
                     value={name}//pegamos o valor do email
                     onChange={e => setName(e.target.value)}//capturamos o valor do email com o onChange, que pega o setEmail e repassa o valor para essa variável.
@@ -45,7 +45,7 @@ function PaginaCadastro() {//o react pega uma função JavaScript que retorna ht
 
                 <div className={styles.wrap_input}>
                   <input
-                    className={email !== "" ? styles.has_val : styles.input}//o ? é um if ternário
+                    className={email !== "" ? styles.has_val__input : styles.input}//o ? é um if ternário
                     type="email"
                     value={email}//pegamos o valor do email
                     onChange={e => setEmail(e.target.value)}//capturamos o valor do email com o onChange, que pega o setEmail e repassa o valor para essa variável.
@@ -55,7 +55,7 @@ function PaginaCadastro() {//o react pega uma função JavaScript que retorna ht
 
                 <div className={styles.wrap_input}>
                   <input
-                    className={password !== "" ? styles.has_val : styles.input}
+                    className={password !== "" ? styles.has_val__input : styles.input}
                     type="password"
                     value={password}
                     onChange={e => setPassword(e.target.value)}

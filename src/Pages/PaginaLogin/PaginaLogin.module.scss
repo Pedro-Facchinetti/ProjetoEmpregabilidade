@@ -45,14 +45,14 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     right: 0;
     margin: 15px;
 
-    font-style: italic;
-    font: $font_type_0;
-
+    font-family: 'Open sans';
+    font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+    
     text-decoration: underline;
+    font-style: italic;
 }
 
 .container_login {
-
     width: 100%;
     min-height: 100vh;
 
@@ -62,16 +62,6 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     flex-direction: column;
 
     background-color: #191919;
-}
-
-.wrap_login {
-    display: flex;
-    width: 390px;
-    border-radius: 10px;
-
-    overflow: hidden;
-    padding: 55px 55px 33px 55px;
-
 }
 
 .login_form {
@@ -135,7 +125,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     color: #adadad;
 }
 
-.focus_input::before {//linha de baixo animação
+.focus_input::before {//animação linha de baixo
     content: "";
     position: absolute;
     bottom: -2px;
@@ -188,8 +178,7 @@ $font_type_0: 300 18px/1.16 "Open Sans";
     color: #391863;
 }
 
-.input, .has_val__input,
-.focus_input {
+.input, .has_val__input {
   border: none; 
   background-color: transparent; 
   outline: 0;
