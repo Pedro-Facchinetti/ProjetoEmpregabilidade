@@ -1,0 +1,51 @@
+.button {
+  cursor: pointer;
+  height: 2.45vw; // 77/1728 * 100
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #391863;
+  border: none;
+  border-radius: 10px;
+  
+  padding: 1.27vw 2.66vw; // 22/1728 * 100 e 46/1728 * 100
+  position: relative;
+  transition: all 0.3s ease;
+  width: auto;
+  max-width: 900px;
+  max-height: 220px;
+  min-height: 78px;
+
+  @media (max-width: 720px) {
+
+    width: 80%;
+
+  }
+
+  @media (min-width: 5000px) {
+    padding: 11px 23px; // Valores fixos para telas muito largas
+  }
+
+  &:hover {
+    background-color: #200246;
+    color: #391863;
+  }
+}
+
+.label {
+  color: #efede6;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-size: /**clamp(0.562560rem, 2vw, 4.688rem);*/ 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -2px;
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
+
+  @media (max-width: 720px) {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+  }
+}
