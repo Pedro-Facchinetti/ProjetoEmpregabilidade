@@ -1,0 +1,53 @@
+/* CustomTextInput.module.scss */
+
+.custom-text-input {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 15px;
+
+    cursor: text;
+    color: white; /* Cor do texto em branco */
+
+    font-size: clamp(0.56256rem, 1.2vw, 4.688rem); /* Tamanho de fonte responsivo com clamp */
+    transition: all 0.3s ease-in-out;
+    resize: none; /* Impede a redimensionamento do textarea */
+    height: auto;
+  }
+  
+  .label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: white; /* Cor do texto em branco */
+    font-size: clamp(0.56256rem, 1.2vw, 4.688rem); /* Tamanho de fonte responsivo com clamp */
+    pointer-events: none;
+    transform-origin: left top;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, top 0.3s ease-in-out;
+    transform: translateY(50%);
+  }
+  
+  .label-focused {
+    transform: translateY(-120%);
+    font-size: 12px; /* Tamanho de fonte menor quando focado */
+  }
+  
+  .character-count {
+    text-align: right;
+    color: white; /* Cor do texto em branco */
+    margin-top: 5px;
+  }
+  
