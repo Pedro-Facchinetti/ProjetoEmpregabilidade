@@ -38,14 +38,15 @@ p {
 
 .container__left {
     display: flex;
-    width: 30%;
+    width: 25%;
     height: auto;
 
     justify-content: center;
 }
 
 .nav {
-    width: 25%;
+    //botões à esqueda da pagina
+    width: 20%;
     height: auto;
 
     position: fixed;
@@ -70,60 +71,13 @@ p {
 .containers {
     display: flex;
 
-    width: 80%;
+    width: 85%; //tamanho dos containers das sections
     height: auto;
 
-    margin-top: 10px;
+    margin-top: 5vh;
     background-color: #3a3a3a;
     padding: 10px 20px;
 
     border-radius: 10px;
-    border:solid 1px #391863;
-}
-
-.firt_container_info {
-    width: 100%;
-    flex-direction: column;
-}
-
-.info__top {
-    width: 100%;
-    display: flex;
-    
-    justify-content: flex-start;
-}
-
-.info__bottom {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.info_pessoais_left {
-    display: flex;
-    flex-direction: column;
-
-    width: 30%;
-    height: auto;
-
-    align-items: center;
-    justify-content: center;
-
-    border-right: solid 2px white ;
-}
-
-.img_left_container {
-    display: flex;
-
-    width: 10vw;
-    padding: 50px;
-}
-
-.info_pessoais_rigth {
-    display: flex;
-    width: 70%;
-    height: auto;
-
-    background-color: #391863;
+    border: solid 1px #391863;
 }
