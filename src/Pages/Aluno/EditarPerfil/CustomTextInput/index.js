@@ -26,7 +26,7 @@ function CustomTextInput() {
         <label
           className={`${styles.label} ${isInputFocused && styles['label-focused']}`}
         >
-          Resuma suas competências:
+          Título do Perfil:
         </label>
       </div>
       <div className={styles['character-count']}>

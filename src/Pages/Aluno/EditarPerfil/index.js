@@ -9,6 +9,7 @@ import renderSection2 from './Section2';
 function EditarPerfil(props) {
     return (
         <div className={styles.main}>
+            
             <div className={styles.container__left}>
                 <nav className={styles.nav}>
                     <ScrollToSectionButton sectionId="section1" buttonLabel="Informações Pessoais" />

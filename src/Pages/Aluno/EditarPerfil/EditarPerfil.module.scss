@@ -34,6 +34,17 @@ p {
     flex-direction: row;
 
     background-color: #191919;
+    
+    @media (max-width: 500px) {
+        .container__left{
+            display: none;
+        }
+
+        .container__rigth{
+            width: 100%;
+        }
+    }
+
 }
 
 .container__left {
@@ -51,12 +62,10 @@ p {
     height: auto;
 
     position: fixed;
-    left: 5%;
-
-    align-items: center;
     flex-direction: column;
 
-    margin-top: 5%;
+    margin-top: 5vh;
+    left: 5%;
 }
 
 .container__rigth {

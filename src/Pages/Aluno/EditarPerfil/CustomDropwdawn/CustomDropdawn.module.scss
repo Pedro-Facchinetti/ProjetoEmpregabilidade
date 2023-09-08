@@ -1,4 +1,4 @@
-.custom-dropdown {
+.custom-dropdawn {
     position: relative;
     font-family: 'Open Sans', sans-serif;
     margin: 10px;
@@ -27,16 +27,17 @@
 
 .placeholder {
     position: relative;
-    width: 300px;
+    width: 18vw;
     padding: 10px;
+
     border: 1px solid white;
-    background: transparent;
     border-radius: 15px;
+
+    background: transparent;
     cursor: pointer;
     color: white;
     /* Cor das letras em branco */
     font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
-    /* Tamanho de fonte responsivo com clamp */
     transition: all 0.3s ease-in-out;
 
     &:before {
@@ -50,7 +51,6 @@
         pointer-events: none;
         transition: all 0.3s ease-in-out;
         font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
-        /* Tamanho de fonte responsivo com clamp */
     }
 }
 
@@ -69,14 +69,12 @@
 .courseLabel {
     padding: 10px;
     text-align: center;
-    /* Centralizar texto */
     font-weight: bold;
 }
 
 .option {
     padding: 10px;
     text-align: center;
-    /* Centralizar texto na opção */
     cursor: pointer;
 
     &:hover {

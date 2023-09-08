@@ -4,12 +4,17 @@ import styles from './section1.module.scss'
 import Button2 from 'Components/Button2';
 import img from 'Assets/Aluno/Perfil/img.png'
 import CustomInput from "../CustomInput";
-import CustomDropdown from "../CustomDropwdawn";
+import CustomDropdawn from "../CustomDropwdawn";
 import CustomTextInput from "../CustomTextInput";
 
 function section1() {
+    /* Opções do dropdawn */
+    const dropdownOptions1 = ['ADS', 'Engenharia de Software', 'Sistema da Informação'];
+    const dropdownOptions2 = ['1°', '2°', '3°', '4°', '5°', '6°', '7°', '8°'];
+
     return (
         <section1 className={styles.section}>
+
             <div className={styles.info__top}>
                 <h1>Informações pessoais</h1>
             </div>
@@ -25,10 +30,11 @@ function section1() {
                         <CustomInput placeholder="Nome completo:"></CustomInput>
                     </div>
                     <div className={styles.input_container}>
-                        <CustomDropdown></CustomDropdown>
+                        <CustomDropdawn options={dropdownOptions1} label="Seu curso" />
+                        <CustomDropdawn options={dropdownOptions2} label="Período" />
                     </div>
                     <div className={styles.input_container}>
-                        <CustomTextInput></CustomTextInput>
+                        <CustomTextInput />
                     </div>
                     <div className={styles.input_container}>
                         <CustomInput placeholder='Localidade:'></CustomInput>
