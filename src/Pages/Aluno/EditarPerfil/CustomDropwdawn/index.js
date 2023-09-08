@@ -1,54 +1,45 @@
 import React, { useState } from 'react';
-import styles from './CustomDropdown.module.scss';
+import styles from './CustomDropdawn.module.scss';
 
-function CustomDropdown() {
+function CustomDropdown({ options, label }) {
   const [selectedOption, setSelectedOption] = useState('');
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdawnOpen, setIsDropdawnOpen] = useState(false);
 
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
-    setIsDropdownOpen(false);
+    setIsDropdawnOpen(false);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleDropdawn = () => {
+    setIsDropdawnOpen(!isDropdawnOpen);
   };
 
   return (
-    <div className={styles['custom-dropdown']}>
+    <div className={styles['custom-dropdawn']}>
       {selectedOption && (
         <label
           className={`${styles.label} ${selectedOption && styles['label-active']}`}
         >
-          Curso:
+          {label}:
         </label>
       )}
       <div
-        className={`${styles.placeholder} ${isDropdownOpen && styles.active}`}
-        onClick={toggleDropdown}
+        className={`${styles.placeholder} ${isDropdawnOpen && styles.active}`}
+        onClick={toggleDropdawn}
       >
-        {selectedOption ? selectedOption : 'Escolha seu cruso:'}
+        {selectedOption ? selectedOption : `${label}:`}
       </div>
-      {isDropdownOpen && (
+      {isDropdawnOpen && (
         <div className={styles.options}>
-          <div
-            className={styles.option}
-            onClick={() => handleOptionSelect('ADS')}
-          >
-            ADS
-          </div>
-          <div
-            className={styles.option}
-            onClick={() => handleOptionSelect('Engenharia de Software')}
-          >
-            Engenharia de Software
-          </div>
-          <div
-            className={styles.option}
-            onClick={() => handleOptionSelect('Sistemas de Informação')}
-          >
-            Sistemas de Informação
-          </div>
+          {options.map((option, index) => (
+            <div
+              key={index}
+              className={styles.option}
+              onClick={() => handleOptionSelect(option)}
+            >
+              {option}
+            </div>
+          ))}
         </div>
       )}
     </div>
