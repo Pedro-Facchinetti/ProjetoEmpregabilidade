@@ -16,8 +16,6 @@ function renderSection3(props) {
                             <p>
                                 Participei de uma startup como desenvolvedor back-end dentro do centro universitário Uniceplac por 3 meses.
                             </p>
-                            <img>
-                            </img>
                         </div>
                     </div>
                 </div>

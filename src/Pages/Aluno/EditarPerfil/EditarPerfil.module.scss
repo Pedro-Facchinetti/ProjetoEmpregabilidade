@@ -1,5 +1,6 @@
 @use "./utils" as *;
 @use "./global" as *;
+
 $font_type_0: 700 36px/1.8 "Raleway", Helvetica, Arial, serif; //h1
 $font_type_1: 400 24px/1.5 "Open Sans", Helvetica, Arial, serif; //h2
 $font_type_2: 700 24px/1.5 "Open Sans", Helvetica, Arial, serif; //h3
@@ -34,13 +35,13 @@ p {
     flex-direction: row;
 
     background-color: #191919;
-    
+
     @media (max-width: 500px) {
-        .container__left{
+        .container__left {
             display: none;
         }
 
-        .container__rigth{
+        .container__rigth {
             width: 100%;
         }
     }

@@ -5,6 +5,8 @@ import ScrollToSectionButton from 'Pages/Aluno/EditarPerfil/ScrollToSectionButto
 
 import renderSection1 from './Section1';
 import renderSection2 from './Section2';
+import renderSection3 from './Section3';
+import renderSection4 from './Section4';
 
 function EditarPerfil(props) {
     return (
@@ -14,20 +16,18 @@ function EditarPerfil(props) {
                 <nav className={styles.nav}>
                     <ScrollToSectionButton sectionId="section1" buttonLabel="Informações Pessoais" />
                     <ScrollToSectionButton sectionId="section2" buttonLabel="Pela Web" />
-                    <ScrollToSectionButton sectionId="section3" buttonLabel="Seção 3" />
-                    <ScrollToSectionButton sectionId="section4" buttonLabel="Seção 4" />
-                    <ScrollToSectionButton sectionId="section5" buttonLabel="Seção 5" />
-                    <ScrollToSectionButton sectionId="section6" buttonLabel="Seção 6" />
+                    <ScrollToSectionButton sectionId="section3" buttonLabel="Sobre mim" />
+                    <ScrollToSectionButton sectionId="section4" buttonLabel="Experiências" />
+                    <ScrollToSectionButton sectionId="section5" buttonLabel="Idiomas" />
                 </nav>
             </div>
 
             <div className={styles.container__rigth}>
-                <div id='section1' className={styles.containers}>{renderSection1(props)}</div>
-                <div id='section2' className={styles.containers}>{renderSection2(props)}</div>
-                <div id='section3' className={styles.containers}>{renderSection2(props)}</div>
-                <div id='section4' className={styles.containers}>{renderSection2(props)}</div>
-                <div id='section5' className={styles.containers}>{renderSection2(props)}</div>
-                <div id='section6' className={styles.containers}>{renderSection2(props)}</div>
+                <div id='section1' className={styles.containers}>{renderSection1(props)}</div>{/** Informações pessoais */}
+                <div id='section2' className={styles.containers}>{renderSection2(props)}</div>{/** Pela web */}
+                <div id='section3' className={styles.containers}>{renderSection3(props)}</div>{/** Sobre mim */}
+                <div id='section4' className={styles.containers}>{renderSection4(props)}</div>{/** Eperiências */}
+                <div id='section5' className={styles.containers}>{renderSection2(props)}</div>{/** Idiomas */}
             </div>
         </div>
     )

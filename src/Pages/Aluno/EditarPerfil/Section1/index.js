@@ -5,7 +5,6 @@ import Button2 from 'Components/Button2';
 import img from 'Assets/Aluno/Perfil/img.png'
 import CustomInput from "../CustomInput";
 import CustomDropdawn from "../CustomDropwdawn";
-import CustomTextInput from "../CustomTextInput";
 
 function section1() {
     /* Opções do dropdawn */
@@ -34,7 +33,9 @@ function section1() {
                         <CustomDropdawn options={dropdownOptions2} label="Período" />
                     </div>
                     <div className={styles.input_container}>
-                        <CustomTextInput />
+                        <div className={styles.input_container_text}>
+                            <p>Aqui ficarão as competências do título!!!</p>
+                        </div>
                     </div>
                     <div className={styles.input_container}>
                         <CustomInput placeholder='Localidade:'></CustomInput>
