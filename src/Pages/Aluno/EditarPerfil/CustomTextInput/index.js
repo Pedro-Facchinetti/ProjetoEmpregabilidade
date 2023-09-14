@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types'; // Importe PropTypes para definir prop types
 import styles from './CustomTextInput.module.scss';
 
-function CustomTextInput() {
+function CustomTextInput({ label }) { // Receba a propriedade 'label'
   const [inputText, setInputText] = useState('');
-  const maxCharacters = 100;
+  const maxCharacters = 500;
 
   const handleChange = (e) => {
     const newText = e.target.value;
@@ -26,14 +27,18 @@ function CustomTextInput() {
         <label
           className={`${styles.label} ${isInputFocused && styles['label-focused']}`}
         >
-          Título do Perfil:
+          {label}
         </label>
       </div>
       <div className={styles['character-count']}>
-        {inputText.length}/{maxCharacters}{/** Contador visual de caracteres usados */}
+        {inputText.length}/{maxCharacters}
       </div>
     </div>
   );
 }
+
+CustomTextInput.propTypes = {
+  label: PropTypes.string.isRequired, // Defina o prop type para 'label'
+};
 
 export default CustomTextInput;

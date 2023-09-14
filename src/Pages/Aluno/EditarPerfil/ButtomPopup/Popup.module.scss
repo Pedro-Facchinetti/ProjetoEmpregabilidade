@@ -1,0 +1,62 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+@use '/src/Pages/Aluno/EditarPerfil/EditarPerfil.module.scss' as *;
+
+/*Fundo*/
+.popup_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Z-index alto para sobrepor o conteúdo principal */
+}
+
+/*Container com as informações*/
+.popup_content {
+    display: block;
+
+    background-color: #3a3a3a;
+    width: 50%;
+    height: 50%;
+
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    input {
+        padding: 8px;
+        margin: 4px 0;
+
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 8px;
+        margin: 4px 0;
+
+        border-radius: 4px;
+    }
+}
+
+.item_list {
+    margin-top: 20px;
+
+    div {
+        background-color: #191919;
+        color: #fff;
+
+        font: 300 16px/1.2 "Open Sans", Helvetica, Arial, serif;
+
+        padding: 8px;
+        margin: 4px 0;
+
+        border-radius: 4px;
+    }
+}
