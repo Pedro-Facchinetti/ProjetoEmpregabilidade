@@ -7,6 +7,7 @@ import renderSection1 from './Section1';
 import renderSection2 from './Section2';
 import renderSection3 from './Section3';
 import renderSection4 from './Section4';
+import RenderSection5 from './Section5';
 
 function EditarPerfil(props) {
     return (
@@ -27,7 +28,7 @@ function EditarPerfil(props) {
                 <div id='section2' className={styles.containers}>{renderSection2(props)}</div>{/** Pela web */}
                 <div id='section3' className={styles.containers}>{renderSection3(props)}</div>{/** Sobre mim */}
                 <div id='section4' className={styles.containers}>{renderSection4(props)}</div>{/** Eperiências */}
-                <div id='section5' className={styles.containers}>{renderSection2(props)}</div>{/** Idiomas */}
+                <div id='section5' className={styles.containers}>{RenderSection5(props)}</div>{/** Idiomas */}
             </div>
         </div>
     )
