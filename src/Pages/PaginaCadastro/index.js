@@ -9,7 +9,6 @@ function PaginaCadastro() {//o react pega uma função JavaScript que retorna ht
   const [name, setName] = useState("")//por padrão o React não altera diretamente o valor da variavel. ele vai receber um valor na variável setEmail, e repassar esse valor para a variável email para que o texto não fique em cima do outro no login.
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-  const [confirmPassword, setconfirmPassword] = useState("")
 
   return (
     <div className={styles.container}>

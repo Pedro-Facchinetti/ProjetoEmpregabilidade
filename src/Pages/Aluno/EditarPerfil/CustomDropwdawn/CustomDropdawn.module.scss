@@ -1,0 +1,91 @@
+.custom-dropdawn {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+    /* Tamanho de fonte responsivo com clamp */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.label-active {
+    top: -15px;
+    font-size: 12px;
+    /* Tamanho de fonte menor quando estiver ativo */
+    color: white;
+    /* Cor do texto em cima do CustomDropdown */
+}
+
+
+.placeholder {
+    position: relative;
+    width: 18vw;
+    padding: 10px;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    /* Cor das letras em branco */
+    font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 0;
+        right: 0;
+        color: #4B247B;
+        background: transparent;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+        font-size: clamp(0.56256rem, 1.2vw, 4.688rem);
+    }
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid white;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    z-index: 1;
+}
+
+.courseLabel {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.option {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+
+    &:last-child {
+        border-radius: 0 0 15px 15px;
+    }
+
+    &:nth-child(n + 2) {
+        border-top: 1px solid #4B247B;
+    }
+}
