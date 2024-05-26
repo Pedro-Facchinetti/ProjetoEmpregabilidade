@@ -12,7 +12,7 @@ function Section3() {
     },
     {
       nome: 'João De Menezes',
-      cargo: 'UX Designer',
+      cargo: 'Dev. Front-end',
       foto: require('Assets/João.png'),
     },
     {

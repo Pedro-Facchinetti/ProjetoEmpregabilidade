@@ -1,13 +1,29 @@
-import { useState } from 'react';
-import logo from 'Assets/PaginaLogin/UNICEPLAC.svg'//depois do import eu nomeio o arquivo como eu quero, depois importo a imagem que eu quero da pasta assets
+import React, { useState } from 'react';
+import axios from 'axios';
+import logo from 'Assets/PaginaLogin/UNICEPLAC.svg';
 import pessoa_login from 'Assets/PaginaLogin/Imagem pessoa login.png';
-import linha from 'Assets/PaginaLogin/Linhas canto inf. dir..svg'
-import styles from './PaginaLogin.module.scss'
+import linha from 'Assets/PaginaLogin/Linhas canto inf. dir..svg';
+import styles from './PaginaLogin.module.scss';
 import Button from 'Components/Button';
+import { Link } from 'react-router-dom';
 
-function PaginaLogin() {//o react pega uma função JavaScript que retorna html, que vai ser exportada e importada no index.js, que vai ser repassado pra nossa id 'root'
-  const [email, setEmail] = useState("")//por padrão o React não altera diretamente o valor da variavel. ele vai receber um valor na variável setEmail, e repassar esse valor para a variável email para que o texto não fique em cima do outro no login.
-  const [password, setPassword] = useState("")
+function PaginaLogin() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('/api/login', { email, password });
+
+      if (response.status === 200) {
+        window.location.href = '/homealuno';
+      }
+    } catch (error) {
+      console.error("Erro ao fazer login:", error);
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -17,31 +33,26 @@ function PaginaLogin() {//o react pega uma função JavaScript que retorna html,
         </div>
       </div>
       <div className={styles.container_right}>
-
         <div>
           <img className={styles.container_rigth_img} src={linha} alt='Linha da borda'></img>
         </div>
-
-        <a className={styles.container_right_text_voltar} href='voltar'>
+        <Link className={styles.container_right_text_voltar} to="/">
           Voltar
-        </a>
-
+        </Link>
         <div className={styles.container_login}>
           <img className={styles.login_form_img} src={logo} alt="UNICEPLAC" />
-          <form className={styles.login_form}>
+          <form className={styles.login_form} onSubmit={handleSubmit}>
             <div className={styles.login_form_left}>
-
               <div className={styles.input_container}>
                 <div className={styles.wrap_input}>
                   <input
-                    className={email !== "" ? styles.has_val__input : styles.input}//o ? é um if ternário
+                    className={email !== "" ? styles.has_val__input : styles.input}
                     type="email"
-                    value={email}//pegamos o valor do email
-                    onChange={e => setEmail(e.target.value)}//capturamos o valor do email com o onChange, que pega o setEmail e repassa o valor para essa variável.
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
                   />
                   <span className={styles.focus_input} data_placeholder="Email institucional"></span>
                 </div>
-
                 <div className={styles.wrap_input}>
                   <input
                     className={password !== "" ? styles.has_val__input : styles.input}
@@ -56,12 +67,10 @@ function PaginaLogin() {//o react pega uma função JavaScript que retorna html,
                 </div>
               </div>
             </div>
-
             <div className={styles.login_form_line} />
-
             <div className={styles.login_form_rigth}>
               <div className={styles.container_login_form_btn}>
-                <Button label='ENTRAR' />
+                <Button label='ENTRAR' type="submit" />
               </div>
             </div>
           </form>

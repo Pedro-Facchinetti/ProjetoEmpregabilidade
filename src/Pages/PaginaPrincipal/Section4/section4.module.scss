@@ -1,0 +1,67 @@
+@use "/src/utils.scss" as *;
+@use "/src/global.scss" as *;
+
+$color_type_0: rgb(255, 255, 255);
+
+$font_type_0: 700 64px/1.17 "Raleway", Helvetica, Arial, serif;
+$font_type_1: 400 24px/1.37 "Open Sans", Helvetica, Arial, serif;
+$font_type_2: 1em/1.37 "Open Sans", Helvetica, Arial, serif;
+$font_type_3: 700 1em/1.37 "Open Sans", Helvetica, Arial, serif;
+
+.EmpresasParceiras {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  width: 100vw;
+  min-height: auto;
+  max-width: 5000px;
+}
+
+.EmpresasParceiras__ConteudoPrincipal {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 155px 0px;
+  margin: 207px 5.79% 60px;
+  position: relative;
+  width: 88.43%;
+}
+.EmpresasParceiras__LinhasDivisorias {
+  height: 193px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  width: 102%;
+  max-width: none;
+  object-fit: cover;
+
+  @media (max-width: 720px) {
+    top: 0px;
+  }
+
+  @media (min-width: 1710px) {
+    width: 120%;
+  }
+
+  @media (min-width: 3500px) {
+    width: 125.5%;
+  }
+
+}
+
+.carrossel{
+  justify-content: center;
+}
+
+.carousel_container {
+  width: 30vw;
+  height: 70vh;
+  align-self: center;
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: 100vh;
+  }  
+}
