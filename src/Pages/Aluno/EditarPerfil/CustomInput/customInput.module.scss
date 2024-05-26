@@ -1,0 +1,44 @@
+/* CustomInput.module.scss */
+
+.custom-input {
+    position: relative;
+    width: 100%;
+    height: 40px; /* Altura responsiva */
+
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 15px; /* Border radius de 15px */
+    transition: all 0.3s ease-in-out;
+
+    padding-left: 10px;
+    margin: 5px 10px;
+  
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      outline: none; /* Remover a borda de foco padrão */
+      font-size: clamp(0.56256rem, 1.2vw, 4.688rem); /* Tamanho de fonte responsivo com clamp */
+      color: white; /* Cor do texto branca */
+    }
+  
+    label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      pointer-events: none;
+      color: white;
+      transition: all 0.3s ease-in-out;
+      font-size: clamp(0.56256rem, 1.2vw, 4.688rem); /* Tamanho de fonte responsivo com clamp */
+      font-family: 'Open Sans', sans-serif;
+    }
+  
+    &.active label,
+    input:focus + label {
+      top: -15px;
+      font-size: 12px; /* Tamanho de fonte menor quando estiver em foco */
+      color: white; /* Cor do texto em cima da caixa de iput*/
+    }
+  }
+  

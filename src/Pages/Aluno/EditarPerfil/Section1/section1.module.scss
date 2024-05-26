@@ -1,0 +1,67 @@
+@use "./utils" as *;
+@use "./global" as *;
+@use '/src/Pages/Aluno/EditarPerfil/EditarPerfil.module.scss' as *;
+
+.section {
+    width: 100%;
+    height: auto;
+}
+
+.info__top {
+    width: 100%;
+    display: flex;
+    
+    justify-content: flex-start;
+}
+
+.info__bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.info_pessoais_left {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    height: auto;
+
+    align-items: center;
+    justify-content: center;
+
+    border-right: solid 2px white ;
+}
+
+.img_left_container {
+    display: flex;
+
+    width: 10vw;
+    padding: 50px;
+}
+
+.info_pessoais_rigth {
+    display: flex;
+
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+}
+
+.input_container {
+    width: 100%;
+    padding: 5px 0px;
+
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.input_container_text {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    margin: 10px 30px 10px 10px;
+}
